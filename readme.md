@@ -19,7 +19,7 @@ To run the application locally, follow these steps:
 
 3. **Run the Docker Container:**
    ```
-   docker run -p 5001:5001 --env-file .env iitm-bs-rag
+   docker run -p 5001:5001 iitm-bs-rag
    ```
 
 4. **Access the Application:**
