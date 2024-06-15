@@ -1,4 +1,3 @@
-
 # IITM BS Programme RAG
 
 ## Overview
@@ -7,22 +6,29 @@ This repository contains an application for querying information about the BS pr
 ## Getting Started
 To run the application locally, follow these steps:
 
-1. **Build the Docker Image:**
+1. **Set up Environment Variables:**
+   Create a `.env` file in the root directory of the project and add your Hugging Face Inference API key as follows:
+   ```
+   HF_TOKEN=your_hugging_face_api_key_here
+   ```
+
+2. **Build the Docker Image:**
    ```
    docker build -t iitm-bs-rag .
    ```
 
-2. **Run the Docker Container:**
+3. **Run the Docker Container:**
    ```
-   docker run -p 5001:5001 iitm-bs-rag
+   docker run -p 5001:5001 --env-file .env iitm-bs-rag
    ```
 
-3. **Access the Application:**
+4. **Access the Application:**
    Open your web browser and go to [http://127.0.0.1:5001/](http://127.0.0.1:5001/)
 
 ## Usage
 - Navigate to the provided URL in your web browser after starting the Docker container.
 - Enter your queries related to the IITM BS programme in the search box.
+- The application will respond with a RAG status (Red, Amber, Green) based on the relevance and current status of the query.
 
 ## Dependencies
 - Docker: Ensure you have Docker installed on your machine to build and run the containerized application.
