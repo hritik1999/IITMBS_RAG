@@ -1,0 +1,38 @@
+/* TEAM */
+
+    Lead: Thejesh GN
+    Contact: i@thejeshgn.com
+    Site: https://thejeshgn.com
+    From: Bengaluru, India
+
+    Desinger: Sudharsha Subbiah
+    Contact: sudharsha@study.iitm.ac.in
+
+    Developer: Santhana Krishnan
+    Contact: krishnan@study.iitm.ac.in
+    Site: https://hashkrish.com
+
+    Developer: Sankara Narayanan
+    Contact: sankaranarayanan@study.iitm.ac.in
+
+    Developer: Aarthi Kondaveethi
+    Contact: aarthi@study.iitm.ac.in
+
+    Tester: Prabuddh Mathur
+    Contact: prabuddh@study.iitm.ac.in
+    Site: https://prabuddh.in
+
+    Tester: Renuka Kanthaiyyan
+    Contact: renukak@study.iitm.ac.in
+
+/* THANKS */
+
+    Developer: Siddhant Shrivastav
+
+    Developer: Sharabesh J 
+
+    Developer: Sudhanshu Kumar
+    
+    Developer: Shubham Arora
+
+

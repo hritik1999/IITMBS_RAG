@@ -1,0 +1,5 @@
+.env
+__pycache__
+application/__pycache__
+frontend/node_modules
+env

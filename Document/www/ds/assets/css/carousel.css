@@ -1,0 +1,159 @@
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+  .fontag2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;         
+    font-weight: 800;
+    line-height: 2.9375rem;
+    text-align: center;
+  }
+
+  .fontag3 {
+          font-size: 1.1666666667rem;
+          font-family:'Open Sans', sans-serif;
+          font-weight: 600;
+          line-height: 1.3333333333rem;
+          letter-spacing: .0233333333rem;
+          color: black;
+  }
+
+  .fonts
+  {
+      font-size: 3vw;
+  } 
+         
+  .dot1 {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+
+  /* Corosal container */ 
+
+.mySlides {
+      display: inline;
+      height:100%;
+  }
+
+
+  .slide-track1 {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      gap: 2em;
+      float:right;
+  }
+
+  @keyframes scroll {
+      0% {transform: translateX(0);}
+      100% {transform: translatex(-1000%)}
+  }
+
+   /* The dots/bullets/indicators */
+   .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .responsive {
+      width: 100%;
+      height: auto;
+  }
+
+ .slideshow-container1 {
+      position: relative;
+      margin: auto;
+  }
+
+ /* Next & previous buttons */
+  .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding-right: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+   }
+
+   .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+  }     
+
+  .active, .dot:hover {
+            background-color: #717171;
+  }
+
+  .fade1 {
+            animation-name: fade;
+            animation-duration: 1.5s;
+  }
+
+  @keyframes fade1 {
+            from {opacity: .4} 
+            to {opacity: 1}
+   }
+
+  @media only screen and (max-width: 300px) {
+            .prev, .next,.text {font-size: 11px}
+  }
+
+  /*sponcer logo slider*/
+  .slider_1:before{left:0;top:0}
+  .slider_1:after{right:0;top:0;transform:rotateZ(180deg)}
+  .slider_1:after,.slider_1:before{background:linear-gradient(to right);content:"";height:75pt;position:absolute;width:200px;z-index:2}
+  .slider_1 .slide_1-track-1{animation:scroll-l 45s linear infinite;display:flex;width:2000px}
+  .slider_1 .slide_1-track-2{animation:scroll-r 45s linear infinite;display:flex;width:2000px}
+  .slider_1 .slide_1 img{width:0px;padding:1pc;vertical-align:middle;margin:0 auto;display:inline-block;height:auto}
+
+  @keyframes scroll-l{0%{transform:translateX(0)}100%{transform:translateX(calc(-250px * 7))}}
+  @keyframes scroll-r{100%{transform:translateX(0)}0%{transform:translateX(calc(-250px * 7))}}
+
+  @media(min-width:1450px){.slider_1 .slide_1 img{width:110px;}.slider_1{height:75pt;margin:0 auto;overflow:hidden;position:relative;cursor:default;user-select:none;touch-action:none}}
+  @media(max-width:520px){.slider_1 .slide_1 img{width:80px;}.slider_1{height:45pt;margin:0 auto;overflow:hidden;position:relative;cursor:default;user-select:none;touch-action:none}}
+  @media(max-width:420px){.slider_1 .slide_1 img{width:70px;}.slider_1{height:45pt;margin:0 auto;overflow:hidden;position:relative;cursor:default;user-select:none;touch-action:none}}
+  @media(min-width:1200px){.slider_1 .slide_1 img{width:90px;}.slider_1{height:75pt;margin:0 auto;overflow:hidden;position:relative;cursor:default;user-select:none;touch-action:none}}
+  @media(min-width:1920px){.slider_1 .slide_1 img{width:120px;}.slider_1{height:75pt;margin:0 auto;overflow:hidden;position:relative;cursor:default;user-select:none;touch-action:none}}
+
+        

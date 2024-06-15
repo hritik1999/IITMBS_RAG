@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Honour Code of the IIT Madras Diploma Program." />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/logo.ico">
+    <link rel="icon" href="assets/img/logo.ico">
+    <title>Honour Code</title>
+
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Nucleo Icons -->
+    <link rel="stylesheet" href="assets/css/nucleo-icons.css">
+    <link rel="stylesheet" href="assets/css/nucleo-svg.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/nucleo-svg.css">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/argon-design-system.css?v=1.2.0">
+    <link rel="stylesheet" href="assets/css/code_of_conduct.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+  <body style="position: relative; min-height: 100%; top: 0px">
+    <div id="fixedTop" class="fixed-top">
+      <section class="google-translator bg-light">
+        <div id="google_translate_element" class="d-none"></div>
+        <div class="mr-4">
+          <ul
+            class="translation-links d-flex justify-content-end m-0 p-0"
+            style="list-style-type: none"
+          >
+            <li class="mr-1">
+              <a
+                id="english"
+                data-lang="English"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+                >English</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="hindi"
+                data-lang="Hindi"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | हिंदी
+              </a>
+            </li>
+            <li class="mr-1">
+              <a
+                id="tamil"
+                data-lang="Tamil"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | தமிழ்
+              </a>
+            </li>
+            <li class="mr-1">
+              <a
+                id="telugu"
+                data-lang="Telugu"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | తెలుగు</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="malyalam"
+                data-lang="Malayalam"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | മലയാളം</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="kannada"
+                data-lang="Kannada"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | ಕನ್ನಡ</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="marathi"
+                data-lang="Marathi"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | मराठी</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="gujrati"
+                data-lang="Gujarati"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | ગુજરાતી
+              </a>
+            </li>
+            <li>
+              <a
+                id="Banga"
+                data-lang="Bengali"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | বাংলা</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-navbar">
+        <a class="navbar-brand mr-lg-5 pl-3" href="index.html">
+          <img
+            style="height: 58px"
+            src="assets/img/IITMOD-Logo.svg"
+            alt="IIT Madras Diploma web app"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar-default"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-default">
+          <div class="navbar-collapse-header">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                <a href="index.html">
+                  <img src="assets/img/logo.png" />
+                </a>
+              </div>
+              <div class="col-6 collapse-close">
+                <button
+                  type="button"
+                  class="navbar-toggler"
+                  data-toggle="collapse"
+                  data-target="#navbar-default"
+                  aria-controls="navbar-default"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item mr-3">
+              <a
+                class="nav-link"
+                href="index.html#importantDates"
+                style="font-weight: 600"
+              >
+                Important Dates
+              </a>
+            </li>
+            <li class="nav-item mr-2 dropdown">
+              <a
+                class="nav-link"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                style="font-weight: 600"
+                >
+                
+                  Academics
+                
+                <i class="fas fa-angle-down"></i>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbar-default_dropdown_1"
+              >
+                <a class="dropdown-item" href="academics.html#AD1"
+                  >Term Structure</a
+                >
+                <a class="dropdown-item" href="academics.html#AD2"
+                  >Course Registrations</a
+                >
+                <a class="dropdown-item" href="academics.html#AD3"
+                  >Assessments</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="academics.html#AD4"
+                  >Exam Cities</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="academics.html#AD5"
+                  >Fee Structure</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="academics.html#AD6"
+                  >Diploma in Programming</a
+                >
+                <a class="dropdown-item" href="academics.html#AD7"
+                  >Diploma in Data Science</a
+                >
+              </div>
+            </li>
+            <li class="nav-item mr-2 dropdown">
+              <a
+                class="nav-link"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                style="font-weight: 600"
+              >
+                
+                  Admissions
+                
+                <i class="fas fa-angle-down"></i>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbar-default_dropdown_1"
+              >
+                <a class="dropdown-item" href="admissions.html#AD1"
+                  >Eligibility</a
+                >
+                <a class="dropdown-item" href="admissions.html#AD2"
+                  >Mandatory Requirements</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="admissions.html#AD3"
+                  >Application Process</a
+                >
+                <a class="dropdown-item" href="admissions.html#AD4"
+                  >Qualifier Exam</a
+                >
+                <a class="dropdown-item" href="admissions.html#AD5"
+                  >Qualifying Criteria</a
+                >
+                <a class="dropdown-item" href="admissions.html#AD6"
+                  >International Students
+                </a>
+              </div>
+            </li>
+
+            <li class="dropdown nav-item mr-0">
+              <a
+                class="nav-link"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                style="font-weight: 600"
+              >
+                
+                About IITM 
+                
+                <i class="fas fa-angle-down"></i>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-left"
+                aria-labelledby="navbar-default_dropdown_1"
+              >
+                <a class="dropdown-item" href="aboutIITM.html"
+                  >About IIT Madras</a
+                >
+
+                <a class="dropdown-item" href="aboutIITM.html#footer"
+                  >Contact Us</a
+                >
+                <div class="dropdown-divider"></div>
+                <a
+                  class="dropdown-item"
+                  target="_blank"
+                  href="https://podgoodies.iitmadrasonline.in/"
+                  >Merchandise</a
+                >
+              </div>
+            </li>
+
+            <li class="nav-item mr-0">
+              <a
+                class="nav-link text-decoration-none"
+                class="text-secondary"
+                href="https://app.diploma.iitm.ac.in/"
+                ><button class="btn btn-sm btn-outline-default">
+                  SIGN IN
+                </button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      
+      <!-- notifications -->
+      
+      <div id="notification" class="xl+notification">
+        <div class="d-md-flex justify-content-center text-highlights">
+          
+                <div class="text-lighter notificationText mr-2">
+                   Application for the next batch of the Diploma Program is now open.
+                </div>
+                <a class="text-decoration-none notification_apply_now" target="_blank"
+                    href="https://app.diploma.iitm.ac.in/auth/login?apply_diploma=true">
+                    <button class="btn btn-sm btn-light">APPLY NOW</button>
+                </a>
+
+        </div>
+      </div>
+      
+      <!-- end-notifications -->
+    </div>
+    <!-- scrollToTop -->
+    <button
+      id="scrollToTop"
+      onclick="scrollToTop();"
+      class="scrollToTop bg-primary shadow-lg--hover"
+    >
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Mob -->
+    <div id="mainContent">
+      <div id="mobNotification" class="container-fluid xl-notification">
+        <div
+          class="row justify-content-center align-items-center pt-2 pr-2 pl-2 pb-4"
+        >
+          <div
+            class="remindText col-12 col-sm-12 col-md-12 col-lg-12 justify-content-center pb-4"
+          >
+            
+                    <p style="line-height: 150%;" class="text-lighter notificationText pb-0 mb-2 text-highlights">
+                       Applications open now for next batch of the Diploma Program
+                    </p>
+                    <a class="text-decoration-none" target="_blank"
+                        href="https://app.diploma.iitm.ac.in/auth/login?apply_diploma=true"><button
+                            class="btn btn-sm btn-light">APPLY NOW</button></a>
+
+          </div>
+        </div>
+      </div>
+      
+    <!-- about IITM -->
+    <div class="container-md container-fluid">
+        <div class="w-100 overflow-auto">
+            <p class="float-sm-right float-none font-weight-500 d-block my-4">
+                <span class="footerLinks" url="privacy_policy.html" style="cursor:pointer;">Privacy Policy</span> |
+                <span class="footerLinks" url="tos.html" style="cursor:pointer;">Terms of Service</span> |
+                <span class="footerLinks" url="code_of_conduct.html" style="cursor:pointer;">Code of Conduct</span> |
+                <span class="footerLinks text-secondary font-weight-600" url="honour_code.html"
+                    style="cursor:pointer;">Honour Code</span>
+            </p>
+        </div>
+
+        <p class="display-3 text-dark">Honour Code</p>
+        <p class="text-muted font-weight-500" style="font-style: italic">Effective Date: 04/10/2021</p>
+        <p class="font-weight-500 text-muted">
+            In order to participate in IIT Madras diploma programmes, you must agree to the Honor Code given below
+            and any additional terms specific to a course or program. This Honor Code, and any additional terms, will be
+            posted on our website - diploma.iitm.ac.in.
+        </p>
+        <p class="h6 text-dark font-weight-600 text-uppercase">Honour Code Pledge</p>
+        <p class="text-muted font-weight-500">
+            By registering in an IIT Madras Diploma programme, I agree that I will:<br /><br /> ● Complete all
+            tests
+            and assignments on my own, unless collaboration on an assignment is explicitly permitted.<br /><br /> ●
+            Maintain
+            only one user account, unless IIT Madras has approved the use of a separate user account in connection with
+            an employer-sponsored or university-sponsored program.<br /><br /> ● Not let anyone else use my username
+            and/or
+            password. <br /><br />● Not engage in any activity that would dishonestly improve my results, or improve or
+            hurt the results of others.<br /><br /> ● Not engage in any activity that will cause grief or harm to the
+            diploma programmes websites/portals or study materials, including activities like hacking or accessing restricted
+            materials.<br /><br /> ● Not post answers to problems that are being used to assess learner performance
+            either
+            inside the course forums or in any other website.<br /><br /> ● Not resubmit or submit work (in identical or
+            similar form) for multiple assignments without prior explicit approval. <br /><br />● Not submit false or
+            altered or fabricated admission documents including signatures or certificates of enrollment or standing,
+            registration forms, and medical certifications.
+        </p>
+        <p class="h6 text-dark font-weight-600 text-uppercase">Violations</p>
+        <p class="text-muted font-weight-500">
+            If you are found in violation of the Terms of Service or Honor Code, you may be subject to one or more of
+            the
+            following actions:<br /><br /> ● Receiving a zero or no credit for an assignment;<br /><br /> ● Having any
+            certificate/degree earned in the course or programme withheld or revoked; <br /><br />● Being unenrolled
+            from a course or programme; or <br /><br />● Termination of your use of the IIT Madras DIPLOMA PROGRAMMES
+            Site.<br /><br />
+            ● Additional actions may be taken at the sole discretion of IIT Madras.<br /><br /> ● No refunds will be
+            issued
+            in the case of any corrective action for such violations.<br /><br /> Honor Code violations will be
+            determined
+            at the sole discretion of IIT Madras. You will be notified if a determination has been made that you have
+            violated
+            this Honor Code and you will be informed of the corresponding action that will be taken as a result of the
+            violation.
+        </p>
+        <p class="h6 text-dark font-weight-600 text-uppercase">Changing the Honour Code</p>
+        <p class="text-muted font-weight-500">
+            Please note that we review and may make changes to this Honor Code from time to time. Any changes to this
+            Honor Code will be effective immediately upon posting on diploma.iitm.ac.in page, with an updated
+            effective
+            date. By accessing the IIT Madras DIPLOMA PROGRAMMES Site after any changes have been made, you signify your
+            agreement
+            on a prospective basis to the modified Honor Code and any changes contained therein. Be sure to return to
+            this page periodically to ensure familiarity with the most current version of this Honor Code.
+        </p>
+    </div>
+
+    <!-- EndContent -->
+
+    </div>
+
+    
+    <!-- Footer -->
+    <footer id="footer" class="bg-primary py-3 pt-5">
+      <div class="container-fluid container-sm">
+        <div class="h5 text-lighter">Contact Us</div>
+        <div class="row pt-2 pb-2">
+          <div class="col-sm-12 col-md-5 text-lighter">
+            <div class="d-flex footer-text">
+              <div style="flex-basis: 8%">
+                <img
+                  style="width: 1rem"
+                  src="assets/img/homepage/Footer%20icon-location.svg"
+                />
+              </div>
+              <div style="flex-basis: 90%">
+                IITM BS Degree Office,<br />3rd Floor, ICSR
+                Building,<br />
+                IIT Madras, Chennai - 600036
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-2 pb-2">
+          <!-- col-md-5 -->
+          <div class="col-sm-12  text-lighter">
+            <div class="d-flex footer-text">
+              <!-- flex-basis: 8% -->
+              <div style="margin-right: 12px;">
+                <img
+                  style="width: 1rem"
+                  src="assets/img/homepage/Footer%20icon-phone.svg"
+                />
+              </div>
+              <!-- style="flex-basis: 90%" -->
+              <div >
+                For any queries, please reach out to us through one of the following modes:
+
+                Please email support-diploma@study.iitm.ac.in - Our normal response time is 3 working days. It might take a little longer during busy periods. We will share Google Meet links during such periods.
+
+                You might also reach us over phone at 7850999966. Due to the high volume of calls we receive every day, there might be long wait times. In some cases, you might have to call multiple times to successfully connect to us. Please use ONLY the above methods for any queries regarding the program.
+
+                <!-- 7850999966 (Mon-Fri 9am-6pm)<br />
+                support-diploma@study.iitm.ac.in -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-2 pb-4 border-bottom justify-content-between">
+          <div class="col-sm-12 col-md-5 text-lighter">
+            <!-- <div class="d-flex footer-text mt-3">
+                            <div class="qr-image mr-3" style="height: 100px;width:100px;">
+                                <img src="assets/img/homepage/whatsappQR.jpeg" style="height: auto;width:100%;" alt="">
+                            </div>
+                            <div class="qr-text" style="flex-basis: 40%;margin-right: auto;align-self: center;">
+                                Scan QR code to chat with our WhatsApp bot +91 9840776800
+                            </div>
+                        </div> -->
+          </div>
+          <div class="d-none d-md-block col-md-6 text-lighter align-self-end">
+            <div class="d-flex justify-content-end">
+              <small>© IIT Madras. All rights reserved.</small>
+            </div>
+          </div>
+          <div class="d-md-none footer-hidden col-md-12 pt-4">
+            <a
+              class="text-decoration-none"
+              href="https://www.facebook.com/iitmdiploma"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="assets/img/homepage/Footer%20icon-facebook.svg"
+                alt="fb"
+                style="width: 2rem"
+              />
+            </a>
+            <a
+              class="text-decoration-none"
+              href="https://www.instagram.com/iitmdiploma"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="assets/img/homepage/Footer%20icon-instagram.svg"
+                alt="ig"
+                style="width: 2rem"
+              />
+            </a>
+            <a
+              class="text-decoration-none"
+              href="https://twitter.com/iitmdiploma"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="assets/img/homepage/Footer%20icon-twitter.svg"
+                alt="tw"
+                style="width: 2rem"
+              />
+            </a>
+            <a
+              class="text-decoration-none"
+              href="https://www.linkedin.com/company/iitm-diploma-programs"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="assets/img/homepage/Footer%20icon-linkedin.svg"
+                alt="tw"
+                style="width: 2rem"
+              />
+            </a>
+
+            <!--<a class="text-decoration-none" href="https://wa.me/message/IVROM2UN7XIJL1" target="_blank">
+                        <img class="mr-1" src="assets/img/homepage/Footer icon-whatsapp.svg" alt="tw"
+                            style="width: 2rem">
+                    </a>-->
+          </div>
+        </div>
+        <div class="py-1 py-md-3 row justify-content-between">
+          <div class="d-none d-md-block col-md-6 pt-2">
+            <a
+              class="text-decoration-none"
+              href="https://www.facebook.com/iitmdiploma"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="assets/img/homepage/Footer%20icon-facebook.svg"
+                alt="fb"
+                style="width: 2rem"
+              />
+            </a>
+            <a
+              class="text-decoration-none"
+              href="https://www.instagram.com/iitmdiploma"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="assets/img/homepage/Footer%20icon-instagram.svg"
+                alt="ig"
+                style="width: 2rem"
+              />
+            </a>
+            <a
+              class="text-decoration-none"
+              href="https://twitter.com/iitmdiploma"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="assets/img/homepage/Footer%20icon-twitter.svg"
+                alt="tw"
+                style="width: 2rem"
+              />
+            </a>
+            <a
+              class="text-decoration-none"
+              href="https://www.linkedin.com/company/iitm-diploma-programs"
+              target="_blank"
+            >
+              <img
+                class="mr-1"
+                src="assets/img/homepage/Footer%20icon-linkedin.svg"
+                alt="tw"
+                style="width: 2rem"
+              />
+            </a>
+            <!--<a class="text-decoration-none" href="https://wa.me/message/IVROM2UN7XIJL1" target="_blank">
+                        <img class="mr-1" src="assets/img/homepage/Footer icon-whatsapp.svg" alt="tw"
+                            style="width: 2rem">
+                    </a>-->
+          </div>
+          <div
+            class="col-sm-12 col-md-6 d-md-none footer-hidden footer-text-small text-lighter"
+          >
+            <div class="d-flex justify-content-md-end">
+              <small>© IIT Madras. All rights reserved.</small>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 d-flex justify-content-md-end">
+            <div class="text-lighter">
+              <span
+                class="footerLinks footer-text"
+                url="privacy_policy.html"
+                style="cursor: pointer"
+                >Privacy Policy</span
+              >
+              |
+              <span
+                class="footerLinks footer-text"
+                url="tos.html"
+                style="cursor: pointer"
+                >Terms of Service</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+     
+    <!-- custom-styling-js -->
+    <script type="text/javascript">
+        let scrollButton = document.getElementById('scrollToTop');
+
+        // Add Custom Margin for the main content
+        window.addEventListener('DOMContentLoaded', function () {
+            let fixed = document.getElementById("fixedTop");
+            const marginTop = window.getComputedStyle(fixed).getPropertyValue("height");
+            let styles = `
+                p:target::before {
+                    content: "";
+                      display: block;
+                      height: ${marginTop}; /* fixed header height*/
+                      margin: -${marginTop} 0 0; /* negative fixed header height */
+                }
+                h2:target::before {
+                    content: "";
+                      display: block;
+                      height: ${marginTop}; /* fixed header height*/
+                      margin: -${marginTop} 0 0; /* negative fixed header height */
+                }
+                div:target::before {
+                    content: "";
+                      display: block;
+                      height: ${marginTop}; /* fixed header height*/
+                      margin: -${marginTop} 0 0; /* negative fixed header height */
+                }
+                `
+            document.getElementById("mainContent").style.marginTop = marginTop;
+            let styleSheet = document.createElement("style")
+            styleSheet.type = "text/css"
+            styleSheet.innerText = styles
+            document.head.appendChild(styleSheet);
+        })
+        window.onload = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        }
+
+        window.onresize = function () {
+            let fixed = document.getElementById("fixedTop");
+            const marginTop = window.getComputedStyle(fixed).getPropertyValue("height");
+            let styles = `
+                p:target::before {
+                    content: "";
+                      display: block;
+                      height: ${marginTop}; /* fixed header height*/
+                      margin: -${marginTop} 0 0; /* negative fixed header height */
+                }`
+            document.getElementById("mainContent").style.marginTop = marginTop;
+            let styleSheet = document.createElement("style")
+            styleSheet.type = "text/css"
+            styleSheet.innerText = styles
+            document.head.appendChild(styleSheet)
+        }
+
+        // Checking if to show scroll to top button
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollButton.style.display = "block";
+            } else {
+                scrollButton.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+        // footer links navigation
+        let footerLinks = document.getElementsByClassName('footerLinks');
+        for (let i = 0; i < footerLinks.length; i++) {
+            footerLinks[i].addEventListener('click', function () {
+                window.location = this.getAttribute('url');
+            })
+        }
+    </script>
+
+    <!--   Core JS Files   -->
+    <script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="assets/js/plugins/bootstrap-switch.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <script src="assets/js/plugins/moment.min.js"></script>
+    <script src="assets/js/plugins/datetimepicker.js" type="text/javascript"></script>
+    <script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
+    <!-- Control Center for Argon UI Kit: parallax effects, scripts for the example pages etc -->
+    <script src="assets/js/argon-design-system.min.js?v=1.2.0" type="text/javascript"></script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="assets/js/custom/google-language-translator.js"></script>
+
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-209773326-1" defer></script>
+    <script src="assets/js/custom/fetch-google-tags.js"></script>
+
+  </body>
+</html>

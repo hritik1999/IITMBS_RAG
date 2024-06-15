@@ -1,0 +1,138 @@
+
+#reg-new{
+   margin-top: 70px;
+   /* temporary */ margin-bottom: 30px;
+   font-size: 20px;
+}
+#reg-new-small{
+    display: none;
+    margin-top: 30px;
+   /* temporary */ margin-bottom: 20px;
+   font-size: 20px;
+}
+@media (max-width:576px){
+    /* #reg-new{
+        font-size: 18px;
+        text-align: center;
+    }
+    #reg-new a{
+        margin-top: 20px;
+        border-radius: 20px;
+        background-color: maroon;
+        color: white;
+        padding: 7px 20px 7px 20px;
+        text-decoration: none;
+    }
+    #reg-new span{
+        display: none;
+    } */
+    #reg-new{
+        display: none;
+    }
+    #reg-new-small{
+        display: block;
+        font-size: 18px;
+        text-align: center;
+    }
+    #guidelines-heading{
+        font-size: 22px;
+    }
+    #top-row{
+        flex-direction: column;
+    }
+}
+
+.i-frame p{
+    display: none;
+}
+
+@media (max-width:768px){
+    .i-frame iframe{
+        display: none;
+    }
+    .i-frame p{
+        display: block;
+        text-align: center;
+    }
+}
+
+#reg-new a, #reg-new-small a{
+    text-decoration: none;   
+    /* color: maroon; */
+    background-color: maroon;
+    color: white;
+    padding: 7px 20px 7px 20px;
+    transition: 200ms;
+}
+#reg-new a:hover, #reg-new-small a:hover{
+    color: maroon;
+    transition: 200ms;
+    background-color: white;
+    border: 1px solid maroon;
+}
+
+#news-box{
+    border: 1px solid maroon;
+    margin-top: 120px;
+    padding: 0;
+    height: 450px;
+}
+
+#news-box h4{
+    background-color: maroon;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    font-size: inherit;
+    position: static;
+}
+
+#news-items{
+    scroll-behavior: smooth;
+}
+
+@media (max-width:576px){
+    #news-box{
+        margin-top: 90px;
+        width: 95%;
+        align-self: center;
+        font-size: 18px
+    }
+}
+
+
+
+
+.news-entry{
+    padding: 10px;
+    transition: 350ms;
+    border-bottom: 1px dotted maroon;
+}
+.news-entry:hover{
+    background-color: rgb(204, 204, 204);
+    /* color: white; */
+    transition: 350ms;
+}
+.news-time{
+    color: #d89a28;
+}
+
+.news-entry a{
+    /* text-decoration: none; */
+    color: maroon;
+}
+
+#current-month{
+    color: maroon;
+    font-weight: 600;
+}
+
+
+
+table thead{
+    background-color: maroon;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+

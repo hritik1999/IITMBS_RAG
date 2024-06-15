@@ -1,0 +1,38 @@
+#outerContainer {
+  position: relative;
+}
+
+.Event-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 10;
+  padding: 24px;
+  padding-block: 48px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.Event-close-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  transform: translateY(-10px);
+  right: 0px;
+  /* padding: 10px; */
+  color: #a0332d;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.event-link {
+  font-weight: 600;
+  color: #a0332d;
+  cursor: pointer;
+}
+.event-link:hover {
+  color: #d6a64f;
+}

@@ -1,0 +1,76 @@
+.icon-box {
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0 10px 0;
+    /* background: #fff;     */
+    /* box-shadow: 0 5px 26px 0 maroon; */
+    border: 2px solid maroon;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+  }
+  
+main{
+  margin-top: 40px;
+}
+
+.icon-box i{
+  font-size: 30px;
+  border-radius: 50%;
+  /* border: 1px solid #d6a64f; */
+  padding: 5px;
+  margin-bottom: 5px;
+  color: #d6a64f;
+  box-shadow: 0 1px 3px rgba(77, 77, 77, 0.466);
+}
+
+.icon-box.contact-icon{
+  height: 190px;
+}
+
+@media (max-width: 576px){
+  .icon-box.contact-icon{
+    height: 200px;;
+  }
+}
+
+.mytitle{
+  background-color: rgb(128, 0, 0);
+  padding: 2px 0 2px 0;
+  color: white;
+}
+
+/* .title.mytitle{
+  color: white;
+} */
+
+.team-img{
+  width: 30%;
+  margin: 5px 0 10px 0;
+  border-radius: 50%;
+  height: 50%;
+  box-shadow: 1px 1px 3px #454545;
+}
+/* .team-plac{
+  width: 20%;
+  margin: 5px 0 10px 0;
+  border-radius: 50%;
+  height: 40%;
+  box-shadow: 1px 1px 3px #454545;
+} */
+
+.desig{
+  font-style: italic;
+  color: #5a5a5a;
+  font-size: 70%;
+}
+
+.st-rep div{
+  font-style: italic;
+  font-size: 80%;
+  color: grey;
+}
+
+.st-rep{
+  margin-bottom: 5px;
+}

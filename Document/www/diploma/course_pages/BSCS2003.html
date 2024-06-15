@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Course page that is a part of the IIT Madras Diploma Program." />
+    <meta property="og:title" content="IIT Madras Diploma web app">
+    <meta property="og:description"
+        content="Course page that is a part of the IIT Madras Diploma Program.">
+    <meta property="og:image" content="https://diploma.iitm.ac.in/assets/img/socialmedia_card.jpg">
+    <meta property="og:url" content="https://diploma.iitm.ac.in/">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/logo.ico">
+    <link rel="icon" href="../assets/img/logo.ico">
+    <link rel="author" href="humans.txt" />
+    <title>Course Page - IIT Madras Diploma Program</title>
+    <!--     Fonts and icons     -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <!-- Nucleo Icons -->
+    <link rel="stylesheet" href="../assets/css/nucleo-icons.css">
+    <link rel="stylesheet" href="../assets/css/nucleo-svg.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="../assets/css/font-awesome.css">
+    <link rel="stylesheet" href="../assets/css/nucleo-svg.css">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/argon-design-system.css?v=1.2.0">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/course_page_base.css">
+</head>
+
+  <body style="position: relative; min-height: 100%; top: 0px">
+    <div id="fixedTop" class="fixed-top">
+      <section class="google-translator bg-light">
+        <div id="google_translate_element" class="d-none"></div>
+        <div class="mr-4">
+          <ul
+            class="translation-links d-flex justify-content-end m-0 p-0"
+            style="list-style-type: none"
+          >
+            <li class="mr-1">
+              <a
+                id="english"
+                data-lang="English"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+                >English</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="hindi"
+                data-lang="Hindi"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | हिंदी
+              </a>
+            </li>
+            <li class="mr-1">
+              <a
+                id="tamil"
+                data-lang="Tamil"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | தமிழ்
+              </a>
+            </li>
+            <li class="mr-1">
+              <a
+                id="telugu"
+                data-lang="Telugu"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | తెలుగు</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="malyalam"
+                data-lang="Malayalam"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | മലയാളം</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="kannada"
+                data-lang="Kannada"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | ಕನ್ನಡ</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="marathi"
+                data-lang="Marathi"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | मराठी</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="gujrati"
+                data-lang="Gujarati"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | ગુજરાતી
+              </a>
+            </li>
+            <li>
+              <a
+                id="Banga"
+                data-lang="Bengali"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | বাংলা</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-navbar">
+        <a class="navbar-brand mr-lg-5 pl-3" href="../index.html">
+            <img style="height: 58px" src="../assets/img/IITMOD-Logo.svg" alt="IIT Madras Diploma Program">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default"
+            aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-default">
+            <div class="navbar-collapse-header">
+                <div class="row">
+                    <div class="col-6 collapse-brand">
+                        <a href="../index.html">
+                            <img src="assets/img/logo.png">
+                        </a>
+                    </div>
+                    <div class="col-6 collapse-close">
+                        <button type="button" class="navbar-toggler" data-toggle="collapse"
+                            data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="../index.html#importantDates" style="font-weight: 600;">
+                        Important Dates
+                    </a>
+                </li>
+                <li class="nav-item mr-2 dropdown">
+                    <a class="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" style="font-weight: 600;">
+                        <span 
+                          style="border-bottom: 2px solid" 
+                          class="border-primary text-primary font-weight-800"
+                        >
+                          Academics
+                        </span>
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-default_dropdown_1">
+                        <a class="dropdown-item" href="../academics.html#AD1">Term Structure</a>
+                        <a class="dropdown-item" href="../academics.html#AD2">Course Registrations</a>
+                        <a class="dropdown-item" href="../academics.html#AD3">Assessments</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../academics.html#AD4">Exam Cities</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../academics.html#AD5">Fee Structure</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../academics.html#AD6">Diploma in Programming</a>
+                        <a class="dropdown-item" href="../academics.html#AD7">Diploma in Data Science</a>
+                    </div>
+                    
+                </li>
+                <li class="nav-item mr-2 dropdown">
+                    <a class="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" style="font-weight: 600;">
+                        Admissions
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-default_dropdown_1">
+                        <a class="dropdown-item" href="../admissions.html#AD1">Eligibility</a>
+                        <a class="dropdown-item" href="../admissions.html#AD2">Mandatory Requirements</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../admissions.html#AD3">Application Process</a>
+                        <a class="dropdown-item" href="../admissions.html#AD4">Qualifier Exam</a>
+                        <a class="dropdown-item" href="../admissions.html#AD5"
+                            >Qualifying Criteria</a
+                        >
+                        <a class="dropdown-item" href="../admissions.html#AD6"
+                            >International Students
+                        </a>
+                    </div>
+                </li>
+                
+                <li class="dropdown nav-item mr-0">
+                    <a class="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" style="font-weight: 600;">
+                        About IITM <i class="fas fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbar-default_dropdown_1">
+                        <a class="dropdown-item" href="aboutIITM.html">About IIT Madras</a>
+                        
+
+                        <a class="dropdown-item" href="aboutIITM.html#footer">Contact Us</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" target="_blank" href="https://podgoodies.iitmadrasonline.in/">Merchandise</a> 
+
+                    </div>
+                </li>
+
+                <li class="nav-item mr-0">
+                    <a class="nav-link text-decoration-none" class="text-secondary"
+                        href="https://app.diploma.iitm.ac.in/"><button
+                            class="btn btn-sm btn-outline-default">SIGN IN</button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    
+      <!-- notifications -->
+      
+      <div id="notification" class="xl+notification">
+        <div class="d-md-flex justify-content-center text-highlights">
+          
+                <div class="text-lighter notificationText mr-2">
+                   Application for the next batch of the Diploma Program is now open.
+                </div>
+                <a class="text-decoration-none notification_apply_now" target="_blank"
+                    href="https://app.diploma.iitm.ac.in/auth/login?apply_diploma=true">
+                    <button class="btn btn-sm btn-light">APPLY NOW</button>
+                </a>
+
+        </div>
+      </div>
+      
+      <!-- end-notifications -->
+    </div>
+    <!-- scrollToTop -->
+    <button
+      id="scrollToTop"
+      onclick="scrollToTop();"
+      class="scrollToTop bg-primary shadow-lg--hover"
+    >
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Mob -->
+    <div id="mainContent">
+      <div id="mobNotification" class="container-fluid xl-notification">
+        <div
+          class="row justify-content-center align-items-center pt-2 pr-2 pl-2 pb-4"
+        >
+          <div
+            class="remindText col-12 col-sm-12 col-md-12 col-lg-12 justify-content-center pb-4"
+          >
+            
+                    <p style="line-height: 150%;" class="text-lighter notificationText pb-0 mb-2 text-highlights">
+                       Applications open now for next batch of the Diploma Program
+                    </p>
+                    <a class="text-decoration-none" target="_blank"
+                        href="https://app.diploma.iitm.ac.in/auth/login?apply_diploma=true"><button
+                            class="btn btn-sm btn-light">APPLY NOW</button></a>
+
+          </div>
+        </div>
+      </div>
+      
+        <div class="container-fluid container-sm py-4">
+            <nav aria-label="breadcrumb" role="navigation">
+                <ol class="breadcrumb bg-transparent pl-0">
+                    <li class="breadcrumb-item"><a href="../index.html" class="text-primary footer-text ">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../academics.html"
+                            class="text-primary footer-text ">Academics</a></li>
+                    <li class="breadcrumb-item active"><span class="text-dark footer-text">BSCS2003</span></li>
+                </ol>
+            </nav>
+            <!-- basic details -->
+            <p class="text-dark text-uppercase h4 my-1 font-weight-600">
+                <!-- Diploma Level Course -->
+            </p>
+            <p class="h2 font-weight-600 text-dark">
+                Modern Application Development I
+            </p>
+            <p class="text-dark">
+                Building a modern application involves many different aspects: front end, recording transactions, storage, connecting to a remote server, using APIs etc. The courses Modern Application Development I and II go through all these aspects through a detailed and evolving case study, teaching the relevant programming skills as the course progresses.
+            </p>
+            <!-- instructor image & name -->
+
+            
+            <div class="d-inline-block">
+                
+                <img src="../assets/img/academics/instructors/9028_1x.jpg" class="avatar"
+                    style="z-index: 0; margin-right: -1rem">
+                
+                <img src="../assets/img/academics/instructors/9031_1x.jpg" class="avatar"
+                    style="z-index: 1; margin-right: -1rem">
+                
+            </div>
+            <p class="d-inline-block" style="margin-left: 1rem;">
+                by
+                
+                <a href="#9028" class="text-primary">Thejesh G N</a>
+                
+                ,
+                
+                
+                <a href="#9031" class="text-primary">Nitin Chandrachoodan</a>
+                
+                
+            </p>
+            
+
+        </div>
+        <!-- brief details -->
+        <div class="container-fluid bg-primary mb-5 mt-4">
+            
+            <div class="container-md container-fluid">
+                
+                <div class="row justify-content-md-start justify-content-center align-items-center briefDetails">
+                    <div class="col-sm-12 col-lg-12 py-md-2 py-lg-4">
+                        <p class="text-lighter mb-1">
+                            Course ID: BSCS2003
+                        </p>
+                        <p class="text-lighter mb-1">
+                            Course Credits: 4
+                        </p>
+                        <p class="text-lighter mb-1">
+                            Course Type: Programming
+                        </p>
+                        <p class="text-lighter mb-1">
+                            Recommended Pre-requisites:
+                            
+                                None
+                            
+                        </p>
+                        
+                        <p class="text-lighter mb-1">
+                            Recommended Co-requisites: 
+                            
+                                
+                                <a href="BSCS2001.html"
+                                        class="text-decoration-none text-white font-weight-600">
+                                        BSCS2001 - &nbsp;Database Management Systems
+                                </a>
+                                
+                            
+                        </p>
+                        
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- What you will learn -->
+        <div class="container-md container-fluid">
+            
+            <p class="h3 font-weight-600 text-dark">What you’ll learn
+                <a class="p-2 bg-secondary ml-3 mb-2 rounded text-white" style="font-size: 12px;" href="https://www.youtube.com/playlist?list=PLZ2ps__7DhBZGVuyXs2l3KJtiHs0KMVE7" target="_blank">
+                    VIEW COURSE VIDEOS <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+                
+            </p>
+            <div class="row justify-content-between">
+                
+                <div class="col-sm-12 col-md-6 d-flex mb-4 text-dark">
+                    <div style="flex-basis: 7%"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <div style="flex-basis: 93%">
+                        To be able to design a web application
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-6 d-flex mb-4 text-dark">
+                    <div style="flex-basis: 7%"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <div style="flex-basis: 93%">
+                        To be able to distinguish between the frontend, the backend, and the database activities
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-6 d-flex mb-4 text-dark">
+                    <div style="flex-basis: 7%"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <div style="flex-basis: 93%">
+                        To create such an application with Python and MySQL
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <!-- Course Structure -->
+        <div class="container-md container-fluid">
+            
+            <p class="h3 font-weight-600 text-dark">Course structure & Assessments</p>
+            <p class="text-dark">
+                12 weeks of coursework, weekly online assignments, 2 in-person invigilated quizzes, 1 in-person invigilated end term exam.
+                 For details of standard course structure and assessments, visit
+                <a href="../academics.html" class="text-decoration-none text-primary font-weight-600">Academics</a>
+                page.
+            </p>
+            <table class="table border-bottom mt-4 mb-2 text-dark">
+                <tbody>
+                    
+                     <tr>
+                            <td>
+                                
+                                WEEK 1
+                                
+                            </td>
+                            <td>
+                                
+                                Basic terminologies of Web
+                                
+                            </td>
+                        </tr>
+                        
+                     <tr>
+                            <td>
+                                
+                                WEEK 2
+                                
+                            </td>
+                            <td>
+                                
+                                Webpages written in HTML and CSS
+                                
+                            </td>
+                        </tr>
+                        
+                     <tr>
+                            <td>
+                                
+                                WEEK 3
+                                
+                            </td>
+                            <td>
+                                
+                                Presentation layer - View
+                                
+                            </td>
+                        </tr>
+                        
+                     <tr>
+                            <td>
+                                
+                                WEEK 4
+                                
+                            </td>
+                            <td>
+                                
+                                Models - Introduction to databases
+                                
+                            </td>
+                        </tr>
+                        
+                    <tr class="week-hide">
+                            <td>
+                                
+                                WEEK 5
+                                
+                            </td>
+                            <td>
+                                
+                                Controllers - Business logic
+                                
+                            </td>
+                        </tr>
+                        
+                    <tr class="week-hide">
+                            <td>
+                                
+                                WEEK 6
+                                
+                            </td>
+                            <td>
+                                
+                                APIs and REST APIs
+                                
+                            </td>
+                        </tr>
+                        
+                    <tr class="week-hide">
+                            <td>
+                                
+                                WEEK 7
+                                
+                            </td>
+                            <td>
+                                
+                                Backend Systems
+                                
+                            </td>
+                        </tr>
+                        
+                    <tr class="week-hide">
+                            <td>
+                                
+                                WEEK 8
+                                
+                            </td>
+                            <td>
+                                
+                                Application Frontend
+                                
+                            </td>
+                        </tr>
+                        
+                    <tr class="week-hide">
+                            <td>
+                                
+                                WEEK 9
+                                
+                            </td>
+                            <td>
+                                
+                                Application Security
+                                
+                            </td>
+                        </tr>
+                        
+                    <tr class="week-hide">
+                            <td>
+                                
+                                WEEK 10
+                                
+                            </td>
+                            <td>
+                                
+                                Testing of Web Applications
+                                
+                            </td>
+                        </tr>
+                        
+                    <tr class="week-hide">
+                            <td>
+                                
+                                WEEK 11
+                                
+                            </td>
+                            <td>
+                                
+                                HTML Evolution and Beyond HTML
+                                
+                            </td>
+                        </tr>
+                        
+                    <tr class="week-hide">
+                            <td>
+                                
+                                WEEK 12
+                                
+                            </td>
+                            <td>
+                                
+                                Application Deployment
+                                
+                            </td>
+                        </tr>
+                        
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-center align-items-center my-4">
+                <a id="show/hide" onclick="weekShow();" style="cursor: pointer"
+                    class="text-decoration-none text-primary font-weight-600">
+                    + Show all weeks
+                </a>
+            </div>
+            
+        </div>
+
+        
+
+        
+
+        <!-- About Instructor -->
+        
+        <div class="w-100 bg-light py-4">
+            <div class="container-fluid container-md">
+                <p class="h3 font-weight-600 text-dark mb-5">About the Instructors</p>
+                
+                <div class="row justify-content-center mb-4">
+                    <div class="col-sm-12 col-md-1 mr-4 d-flex justify-content-center align-items-start">
+                        <img width=115 style="border-radius: 50%"
+                            src="../assets/img/academics/instructors/9028_2x.jpg">
+                    </div>
+                    <div class="col-sm-12 col-md-9">
+                        <div id="9028"
+                            class="h4 font-weight-600 text-secondary text-center text-md-left">
+                            Thejesh G N</div>
+                        <div class="lead text-dark mt-1">
+                            
+                                Software Consultant,
+                            
+                            
+                                IITM BSc Degree,
+                            
+                            
+                            IIT Madras
+                            
+                        </div>
+                        <div id="9028-info" class="instructor-paragraph-small">
+                            
+                            
+                            <p class="text-dark d-inline">
+                                Thejesh GN is an Electronics and Communication graduate from Bangalore, India. He started his career as a software engineer at Infosys technologies limited. He was awarded Infosys Community Empathy Fellowship in 2010, which allowed him to work for a not-for-profit organization for a year. He was also a senior software engineer for NPTEL / CourseBuilder team, which is now offered as Seek, an Open Source Online Education delivery platform.
+                            </p>
+                            
+                            
+                            <div id="9028-info-f" class="d-inline" style="cursor: pointer">
+                                ...&nbsp;
+                                <span onclick="showMore(`9028-info`);"
+                                    class="text-primary text-decoration-none font-weight-600"> more</span>
+                            </div>
+                            
+                            </p>
+
+                            
+                            
+                            <p class="text-dark lessAbout d-inline">
+                                He loves free and open-source software. He has been an active contributor to various open-source projects. He was awarded IBM Champion in the years 2018 and 2019. Currently, he runs DataMeet – India's biggest Open Data Community and works as an Engineering Head.
+                            </p>
+                            
+                            
+                            <div class="d-none" id="9028-info-l" }} style="cursor: pointer">
+                                &nbsp;
+                                <a onclick="showLess(`9028-info`);"
+                                    class="text-primary text-decoration-none font-weight-600"> less</a>
+                            </div>
+                            
+                            </p>
+
+                            
+                            <div class="mb-3">
+                                
+                                <a href="https://thejeshgn.com" target="_blank" class="text-decoration-none text-dark">
+                                    Visit website
+                                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                                </a>
+                                
+                            </div>
+                            
+                            <p class="text-dark">
+                                Other courses by the same instructor:
+                                
+                                <a href="BSCS2006.html"
+                                    class="text-decoration-none text-primary font-weight-600">BSCS2006 -
+                                    Modern Application Development II</a>
+                                
+                                
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center mb-4">
+                    <div class="col-sm-12 col-md-1 mr-4 d-flex justify-content-center align-items-start">
+                        <img width=115 style="border-radius: 50%"
+                            src="../assets/img/academics/instructors/9031_2x.jpg">
+                    </div>
+                    <div class="col-sm-12 col-md-9">
+                        <div id="9031"
+                            class="h4 font-weight-600 text-secondary text-center text-md-left">
+                            Nitin Chandrachoodan</div>
+                        <div class="lead text-dark mt-1">
+                            
+                                Professor,
+                            
+                            
+                                Department of Electrical Engineering,
+                            
+                            
+                            IIT Madras
+                            
+                        </div>
+                        <div id="9031-info" class="instructor-paragraph-small">
+                            
+                            
+                            <p class="text-dark d-inline">
+                                Nitin Chandrachoodan received his BTech (electronics and communication engineering) from IIT Madras in 1996, and PhD from the University of Maryland at College Park in 2002, in the area of high-level synthesis techniques for mapping DSP algorithms to architectures. He has been with the department of electrical engineering at IIT Madras since 2004, where he is currently an professor. 
+                            </p>
+                            
+                            
+                            <div id="9031-info-f" class="d-inline" style="cursor: pointer">
+                                ...&nbsp;
+                                <span onclick="showMore(`9031-info`);"
+                                    class="text-primary text-decoration-none font-weight-600"> more</span>
+                            </div>
+                            
+                            </p>
+
+                            
+                            
+                            <p class="text-dark lessAbout d-inline">
+                                His research interests include digital systems design and design automation tools and techniques, as well as design of embedded systems with a special focus on assistive technologies. He has taught graduate courses on digital integrated circuit design and on mapping algorithms to architectures, and a UG course on data structures and algorithms, as well as a laboratory course on digital design using FPGAs. He is an associate editor of the Springer Journal of Signal Processing Systems.
+                            </p>
+                            
+                            
+                            <div class="d-none" id="9031-info-l" }} style="cursor: pointer">
+                                &nbsp;
+                                <a onclick="showLess(`9031-info`);"
+                                    class="text-primary text-decoration-none font-weight-600"> less</a>
+                            </div>
+                            
+                            </p>
+
+                            
+                            <div class="mb-3">
+                                
+                                <a href="http://www.ee.iitm.ac.in/~nitin/" target="_blank" class="text-decoration-none text-dark">
+                                    Visit website
+                                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                                </a>
+                                
+                            </div>
+                            
+                            <p class="text-dark">
+                                Other courses by the same instructor:
+                                
+                                <a href="BSCS2006.html"
+                                    class="text-decoration-none text-primary font-weight-600">BSCS2006 -
+                                    Modern Application Development II</a>
+                                
+                                
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- View All -->
+        <div class="container-fluid container-md h-auto">
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- 
+                    
+                    
+                     -->
+                    <a class="text-decoration-none" href="../academics.html#AD6">
+                        <p class="lead text-primary font-weight-600 float-md-right float-sm-none">
+                            View all courses
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </p>
+                    </a>
+                    <!-- <a class="text-decoration-none" href="../academics.html#AC12">
+                    </a>
+                    <a class="text-decoration-none" href="../academics.html#AC15">
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    <!-- EndContent -->
+    
+    </div>
+
+    
+    <!-- Footer -->
+    <footer id="footer" class="bg-primary py-3 pt-5">
+        <div class="container-fluid container-sm">
+            <div class="h5 text-lighter">Contact Us</div>
+            <div class="row pt-2 pb-2">
+                <div class="col-sm-12 col-md-5 text-lighter">
+                    <div class="d-flex footer-text">
+                        <div style="flex-basis: 8%"><img style="width: 1rem"
+                                src="../assets/img/homepage/Footer%20icon-location.svg"></div>
+                        <div style="flex-basis: 90%">
+                            Office of IITM Online Programs, <br>3rd Floor, ICSR Building,<br /> IIT Madras, Chennai - 600036
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-2 pb-2">
+                <div class="col-sm-12 col-md-5 text-lighter">
+                    <div class="d-flex footer-text">
+                        <div style="flex-basis: 8%"><img style="width: 1rem"
+                                src="../assets/img/homepage/Footer%20icon-phone.svg"></div>
+                        <div style="flex-basis: 90%">
+                            Phone support will not be available between 13 to 21 January. Please email support-diploma@study.iitm.ac.in for queries 
+                            <!-- 7850999966 (Mon-Fri 9am-6pm)<br /> support-diploma@study.iitm.ac.in -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-2 pb-4 border-bottom justify-content-between">
+                <div class="col-sm-12 col-md-5 text-lighter">
+                    <!-- <div class="d-flex footer-text mt-3">
+                            <div class="qr-image mr-3" style="height: 100px;width:100px;">
+                                <img src="assets/img/homepage/whatsappQR.jpeg" style="height: auto;width:100%;" alt="">
+                            </div>
+                            <div class="qr-text" style="flex-basis: 40%;margin-right: auto;align-self: center;">
+                                Scan QR code to chat with our WhatsApp bot +91 9840776800
+                            </div>
+                        </div> -->
+                </div>
+                <div class="d-none d-md-block col-md-6 text-lighter align-self-end">
+                    <div class="d-flex justify-content-end">
+                        <small>© IIT Madras. All rights reserved.</small>
+                    </div>
+                </div>
+                <div class="d-md-none footer-hidden col-md-12 pt-4">
+                    <a class="text-decoration-none" href="https://www.facebook.com/iitmdiploma" target="_blank">
+                        <img class="mr-1" src="../assets/img/homepage/Footer%20icon-facebook.svg" alt="fb"
+                            style="width: 2rem">
+                    </a>
+                    <a class="text-decoration-none" href="https://www.instagram.com/iitmdiploma"
+                        target="_blank">
+                        <img class="mr-1" src="../assets/img/homepage/Footer%20icon-instagram.svg" alt="ig"
+                            style="width: 2rem">
+                    </a>
+                    <a class="text-decoration-none" href="https://twitter.com/iitmdiploma" target="_blank">
+                        <img class="mr-1" src="../assets/img/homepage/Footer%20icon-twitter.svg" alt="tw"
+                            style="width: 2rem">
+                    </a>
+                    <a class="text-decoration-none"
+                        href="https://www.linkedin.com/company/iitm-diploma-programs" target="_blank">
+                        <img class="mr-1" src="../assets/img/homepage/Footer%20icon-linkedin.svg" alt="tw"
+                            style="width: 2rem">
+                    </a>
+
+                    <!--<a class="text-decoration-none" href="https://wa.me/message/IVROM2UN7XIJL1" target="_blank">
+                        <img class="mr-1" src="assets/img/homepage/Footer icon-whatsapp.svg" alt="tw"
+                            style="width: 2rem">
+                    </a>-->
+                </div>
+            </div>
+            <div class="py-1 py-md-3 row justify-content-between">
+                <div class="d-none d-md-block col-md-6 pt-2">
+                    <a class="text-decoration-none" href="https://www.facebook.com/iitmdiploma" target="_blank">
+                        <img class="mr-1" src="../assets/img/homepage/Footer%20icon-facebook.svg" alt="fb"
+                            style="width: 2rem">
+                    </a>
+                    <a class="text-decoration-none" href="https://www.instagram.com/iitmdiploma"
+                        target="_blank">
+                        <img class="mr-1" src="../assets/img/homepage/Footer%20icon-instagram.svg" alt="ig"
+                            style="width: 2rem">
+                    </a>
+                    <a class="text-decoration-none" href="https://twitter.com/iitmdiploma" target="_blank">
+                        <img class="mr-1" src="../assets/img/homepage/Footer%20icon-twitter.svg" alt="tw"
+                            style="width: 2rem">
+                    </a>
+                    <a class="text-decoration-none"
+                        href="https://www.linkedin.com/company/iitm-diploma-programs" target="_blank">
+                        <img class="mr-1" src="../assets/img/homepage/Footer%20icon-linkedin.svg" alt="tw"
+                            style="width: 2rem">
+                    </a>
+                    <!--<a class="text-decoration-none" href="https://wa.me/message/IVROM2UN7XIJL1" target="_blank">
+                        <img class="mr-1" src="assets/img/homepage/Footer icon-whatsapp.svg" alt="tw"
+                            style="width: 2rem">
+                    </a>-->
+                </div>
+                <div class="col-sm-12 col-md-6 d-md-none footer-hidden footer-text-small text-lighter">
+                    <div class="d-flex justify-content-md-end">
+                        <small>© IIT Madras. All rights reserved.</small>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 d-flex justify-content-md-end">
+                    <div class="text-lighter">
+                        <span class="footerLinks footer-text" url="../privacy_policy.html" style="cursor: pointer;">Privacy
+                            Policy</span> |
+                        <span class="footerLinks footer-text" url="../tos.html" style="cursor: pointer;">Terms of
+                            Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="../assets/js/plugins/bootstrap-switch.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <script src="../assets/js/plugins/moment.min.js"></script>
+    <script src="../assets/js/plugins/datetimepicker.js" type="text/javascript"></script>
+    <script src="../assets/js/plugins/bootstrap-datepicker.min.js"></script>
+
+    <!-- Control Center for Argon UI Kit: parallax effects, scripts for the example pages etc -->
+    <script src="../assets/js/argon-design-system.min.js?v=1.2.0" type="text/javascript"></script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="../assets/js/custom/google-language-translator.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-209773326-1" defer></script>
+    <script src="../assets/js/custom/fetch-google-tags.js"></script>
+
+    <!-- Custom -->
+    <script src="../assets/js/custom/courses.js"></script>
+    
+  </body>
+</html>

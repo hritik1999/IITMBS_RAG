@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="Course page that is a part of the IIT Madras Diploma Program." />
+    <meta property="og:title" content="IIT Madras Diploma web app">
+    <meta property="og:description"
+        content="Course page that is a part of the IIT Madras Diploma Program.">
+    <meta property="og:image" content="https://diploma.iitm.ac.in/assets/img/socialmedia_card.jpg">
+    <meta property="og:url" content="https://diploma.iitm.ac.in/">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/logo.ico">
+    <link rel="icon" href="../assets/img/logo.ico">
+    <link rel="author" href="humans.txt" />
+    <title>Course Page - IIT Madras Diploma Program</title>
+    <!--     Fonts and icons     -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <!-- Nucleo Icons -->
+    <link rel="stylesheet" href="../assets/css/nucleo-icons.css">
+    <link rel="stylesheet" href="../assets/css/nucleo-svg.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="../assets/css/font-awesome.css">
+    <link rel="stylesheet" href="../assets/css/nucleo-svg.css">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../assets/css/argon-design-system.css?v=1.2.0">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/course_page_base.css">
+</head>
+
+  <body style="position: relative; min-height: 100%; top: 0px">
+    <div id="fixedTop" class="fixed-top">
+      <section class="google-translator bg-light">
+        <div id="google_translate_element" class="d-none"></div>
+        <div class="mr-4">
+          <ul
+            class="translation-links d-flex justify-content-end m-0 p-0"
+            style="list-style-type: none"
+          >
+            <li class="mr-1">
+              <a
+                id="english"
+                data-lang="English"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+                >English</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="hindi"
+                data-lang="Hindi"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | हिंदी
+              </a>
+            </li>
+            <li class="mr-1">
+              <a
+                id="tamil"
+                data-lang="Tamil"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | தமிழ்
+              </a>
+            </li>
+            <li class="mr-1">
+              <a
+                id="telugu"
+                data-lang="Telugu"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | తెలుగు</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="malyalam"
+                data-lang="Malayalam"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | മലയാളം</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="kannada"
+                data-lang="Kannada"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | ಕನ್ನಡ</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="marathi"
+                data-lang="Marathi"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | मराठी</a
+              >
+            </li>
+            <li class="mr-1">
+              <a
+                id="gujrati"
+                data-lang="Gujarati"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | ગુજરાતી
+              </a>
+            </li>
+            <li>
+              <a
+                id="Banga"
+                data-lang="Bengali"
+                class="notranslate translation-lang text-gray"
+                role="button"
+                onclick="changeLanguage(this)"
+              >
+                | বাংলা</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-navbar">
+        <a class="navbar-brand mr-lg-5 pl-3" href="../index.html">
+            <img style="height: 58px" src="../assets/img/IITMOD-Logo.svg" alt="IIT Madras Diploma Program">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default"
+            aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-default">
+            <div class="navbar-collapse-header">
+                <div class="row">
+                    <div class="col-6 collapse-brand">
+                        <a href="../index.html">
+                            <img src="assets/img/logo.png">
+                        </a>
+                    </div>
+                    <div class="col-6 collapse-close">
+                        <button type="button" class="navbar-toggler" data-toggle="collapse"
+                            data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="../index.html#importantDates" style="font-weight: 600;">
+                        Important Dates
+                    </a>
+                </li>
+                <li class="nav-item mr-2 dropdown">
+                    <a class="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" style="font-weight: 600;">
+                        <span 
+                          style="border-bottom: 2px solid" 
+                          class="border-primary text-primary font-weight-800"
+                        >
+                          Academics
+                        </span>
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-default_dropdown_1">
+                        <a class="dropdown-item" href="../academics.html#AD1">Term Structure</a>
+                        <a class="dropdown-item" href="../academics.html#AD2">Course Registrations</a>
+                        <a class="dropdown-item" href="../academics.html#AD3">Assessments</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../academics.html#AD4">Exam Cities</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../academics.html#AD5">Fee Structure</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../academics.html#AD6">Diploma in Programming</a>
+                        <a class="dropdown-item" href="../academics.html#AD7">Diploma in Data Science</a>
+                    </div>
+                    
+                </li>
+                <li class="nav-item mr-2 dropdown">
+                    <a class="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" style="font-weight: 600;">
+                        Admissions
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-default_dropdown_1">
+                        <a class="dropdown-item" href="../admissions.html#AD1">Eligibility</a>
+                        <a class="dropdown-item" href="../admissions.html#AD2">Mandatory Requirements</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../admissions.html#AD3">Application Process</a>
+                        <a class="dropdown-item" href="../admissions.html#AD4">Qualifier Exam</a>
+                        <a class="dropdown-item" href="../admissions.html#AD5"
+                            >Qualifying Criteria</a
+                        >
+                        <a class="dropdown-item" href="../admissions.html#AD6"
+                            >International Students
+                        </a>
+                    </div>
+                </li>
+                
+                <li class="dropdown nav-item mr-0">
+                    <a class="nav-link" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" style="font-weight: 600;">
+                        About IITM <i class="fas fa-angle-down"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbar-default_dropdown_1">
+                        <a class="dropdown-item" href="aboutIITM.html">About IIT Madras</a>
+                        
+
+                        <a class="dropdown-item" href="aboutIITM.html#footer">Contact Us</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" target="_blank" href="https://podgoodies.iitmadrasonline.in/">Merchandise</a> 
+
+                    </div>
+                </li>
+
+                <li class="nav-item mr-0">
+                    <a class="nav-link text-decoration-none" class="text-secondary"
+                        href="https://app.diploma.iitm.ac.in/"><button
+                            class="btn btn-sm btn-outline-default">SIGN IN</button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    
+      <!-- notifications -->
+      
+      <div id="notification" class="xl+notification">
+        <div class="d-md-flex justify-content-center text-highlights">
+          
+                <div class="text-lighter notificationText mr-2">
+                   Application for the next batch of the Diploma Program is now open.
+                </div>
+                <a class="text-decoration-none notification_apply_now" target="_blank"
+                    href="https://app.diploma.iitm.ac.in/auth/login?apply_diploma=true">
+                    <button class="btn btn-sm btn-light">APPLY NOW</button>
+                </a>
+
+        </div>
+      </div>
+      
+      <!-- end-notifications -->
+    </div>
+    <!-- scrollToTop -->
+    <button
+      id="scrollToTop"
+      onclick="scrollToTop();"
+      class="scrollToTop bg-primary shadow-lg--hover"
+    >
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Mob -->
+    <div id="mainContent">
+      <div id="mobNotification" class="container-fluid xl-notification">
+        <div
+          class="row justify-content-center align-items-center pt-2 pr-2 pl-2 pb-4"
+        >
+          <div
+            class="remindText col-12 col-sm-12 col-md-12 col-lg-12 justify-content-center pb-4"
+          >
+            
+                    <p style="line-height: 150%;" class="text-lighter notificationText pb-0 mb-2 text-highlights">
+                       Applications open now for next batch of the Diploma Program
+                    </p>
+                    <a class="text-decoration-none" target="_blank"
+                        href="https://app.diploma.iitm.ac.in/auth/login?apply_diploma=true"><button
+                            class="btn btn-sm btn-light">APPLY NOW</button></a>
+
+          </div>
+        </div>
+      </div>
+      
+        <div class="container-fluid container-sm py-4">
+            <nav aria-label="breadcrumb" role="navigation">
+                <ol class="breadcrumb bg-transparent pl-0">
+                    <li class="breadcrumb-item"><a href="../index.html" class="text-primary footer-text ">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../academics.html"
+                            class="text-primary footer-text ">Academics</a></li>
+                    <li class="breadcrumb-item active"><span class="text-dark footer-text">BSCS2004</span></li>
+                </ol>
+            </nav>
+            <!-- basic details -->
+            <p class="text-dark text-uppercase h4 my-1 font-weight-600">
+                <!-- Diploma Level Course -->
+            </p>
+            <p class="h2 font-weight-600 text-dark">
+                Machine Learning Foundations
+            </p>
+            <p class="text-dark">
+                This course lays the groundwork for the upcoming ML courses by covering various fundamentals that do not necessarily fall under Machine Learning but are quite necessary for a comprehensive understanding of Machine Learning.
+            </p>
+            <!-- instructor image & name -->
+
+            
+            <div class="d-inline-block">
+                
+                <img src="../assets/img/academics/instructors/9012_1x.jpg" class="avatar"
+                    style="z-index: 0; margin-right: -1rem">
+                
+                <img src="../assets/img/academics/instructors/9013_1x.jpg" class="avatar"
+                    style="z-index: 1; margin-right: -1rem">
+                
+                <img src="../assets/img/academics/instructors/9014_1x.jpg" class="avatar"
+                    style="z-index: 2; margin-right: -1rem">
+                
+            </div>
+            <p class="d-inline-block" style="margin-left: 1rem;">
+                by
+                
+                <a href="#9012" class="text-primary">Harish Guruprasad Ramaswamy</a>
+                
+                ,
+                
+                
+                <a href="#9013" class="text-primary">Arun Rajkumar</a>
+                
+                ,
+                
+                
+                <a href="#9014" class="text-primary">Prashanth LA</a>
+                
+                
+            </p>
+            
+
+        </div>
+        <!-- brief details -->
+        <div class="container-fluid bg-primary mb-5 mt-4">
+            
+            <div class="container-md container-fluid">
+                
+                <div class="row justify-content-md-start justify-content-center align-items-center briefDetails">
+                    <div class="col-sm-12 col-lg-12 py-md-2 py-lg-4">
+                        <p class="text-lighter mb-1">
+                            Course ID: BSCS2004
+                        </p>
+                        <p class="text-lighter mb-1">
+                            Course Credits: 4
+                        </p>
+                        <p class="text-lighter mb-1">
+                            Course Type: Data Science
+                        </p>
+                        <p class="text-lighter mb-1">
+                            Recommended Pre-requisites:
+                            
+                                None
+                            
+                        </p>
+                        
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- What you will learn -->
+        <div class="container-md container-fluid">
+            
+            <p class="h3 font-weight-600 text-dark">What you’ll learn
+                <a class="p-2 bg-secondary ml-3 mb-2 rounded text-white" style="font-size: 12px;" href="https://www.youtube.com/playlist?list=PLZ2ps__7DhBammhVmBE9f5eezTj2kDfTN" target="_blank">
+                    VIEW COURSE VIDEOS <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+                
+            </p>
+            <div class="row justify-content-between">
+                
+                <div class="col-sm-12 col-md-6 d-flex mb-4 text-dark">
+                    <div style="flex-basis: 7%"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <div style="flex-basis: 93%">
+                        Recognising if a particular problem can be viewed as a Machine Learning problem.
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-6 d-flex mb-4 text-dark">
+                    <div style="flex-basis: 7%"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <div style="flex-basis: 93%">
+                        Breaking down standard Machine Learning problems into more fundamental problems using tools from Calculus, Linear Algebra, Probability and Optimisation.
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-6 d-flex mb-4 text-dark">
+                    <div style="flex-basis: 7%"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <div style="flex-basis: 93%">
+                        Recognising relationships between equation solving, projection onto a subspace, and the supervised learning problem of linear least squares regression.
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-6 d-flex mb-4 text-dark">
+                    <div style="flex-basis: 7%"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <div style="flex-basis: 93%">
+                        Visualising eigenvalue/eigenvectors as a property of a matrix, and recognising its potential in practical unsupervised learning problems like dimensionality reduction and image compression.
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-6 d-flex mb-4 text-dark">
+                    <div style="flex-basis: 7%"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <div style="flex-basis: 93%">
+                        Using, identifying failure modes, programming and debugging simple gradient descent methods for solving unconstrained optimisation problems.
+                    </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-6 d-flex mb-4 text-dark">
+                    <div style="flex-basis: 7%"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    <div style="flex-basis: 93%">
+                        Recognising the value of simple models like Gaussian mixture models for data, constructing algorithms for learning the parameters of such models, and interpreting these parameters.
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <!-- Course Structure -->
+        <div class="container-md container-fluid">
+            
+            <p class="h3 font-weight-600 text-dark">Course structure & Assessments</p>
+            <p class="text-dark">
+                12 weeks of coursework, weekly online assignments, 2 in-person invigilated quizzes, 1 in-person invigilated end term exam.
+                 For details of standard course structure and assessments, visit
+                <a href="../academics.html" class="text-decoration-none text-primary font-weight-600">Academics</a>
+                page.
+            </p>
+            <table class="table border-bottom mt-4 mb-2 text-dark">
+                <tbody>
+                    
+                     <tr>
+                            <td>
+                                
+                                WEEK 1
+                                
+                            </td>
+                            <td>
+                                
+                                Introduction to machine learning
+                                
+                            </td>
+                        </tr>
+                        
+                     <tr>
+                            <td>
+                                
+                                WEEK 2
+                                
+                            </td>
+                            <td>
+                                
+                                Calculus
+                                
+                            </td>
+                        </tr>
+                        
+                     <tr>
+                            <td>
+                                
+                                WEEK 3
+                                
+                            </td>
+                            <td>
+                                
+                                Linear Algebra - Least Squares Regression
+                                
+                            </td>
+                        </tr>
+                        
+                     <tr>
+                            <td>
+                                
+                                WEEK 4
+                                
+                            </td>
+                            <td>
+                                
+                                Linear Algebra - Eigenvalues and eigenvectors
+                                
+                            </td>
+                        </tr>
+                        
+                    <tr class="week-hide">
+                            <td>
+                                
+                                WEEK 5
+                                
+                            </td>
+                            <td>
+                                
+                                Linear Algebra - Symmetric matrices
+                                
+                            </td>
+                        </tr>
+                        
+                    <tr class="week-hide">
+                            <td>
+                                
+                                WEEK 6
+                                
+                            </td>
+                            <td>
+                                
+                                Linear Algebra - Singular value decomposition, Principal Component Analysis in Image Processing
+                                
+                            </td>
+                        </tr>
+                        
+                    <tr class="week-hide">
+                            <td>
+                                
+                                WEEK 7
+                                
+                            </td>
+                            <td>
+                                
+                                Unconstrained Optimisation
+                                
+                            </td>
+                        </tr>
+                        
+                    <tr class="week-hide">
+                            <td>
+                                
+                                WEEK 8
+                                
+                            </td>
+                            <td>
+                                
+                                Convex sets, functions, and optimisation problems
+                                
+                            </td>
+                        </tr>
+                        
+                    <tr class="week-hide">
+                            <td>
+                                
+                                WEEK 9
+                                
+                            </td>
+                            <td>
+                                
+                                Constrained Optimisation and Lagrange Multipliers. Logistic regression as an optimization problem
+                                
+                            </td>
+                        </tr>
+                        
+                    <tr class="week-hide">
+                            <td>
+                                
+                                WEEK 10
+                                
+                            </td>
+                            <td>
+                                
+                                Examples of probabilistic models in machine learning problems
+                                
+                            </td>
+                        </tr>
+                        
+                    <tr class="week-hide">
+                            <td>
+                                
+                                WEEK 11
+                                
+                            </td>
+                            <td>
+                                
+                                Exponential Family of distributions
+                                
+                            </td>
+                        </tr>
+                        
+                    <tr class="week-hide">
+                            <td>
+                                
+                                WEEK 12
+                                
+                            </td>
+                            <td>
+                                
+                                Parameter estimation. Expectation Maximization.
+                                
+                            </td>
+                        </tr>
+                        
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-center align-items-center my-4">
+                <a id="show/hide" onclick="weekShow();" style="cursor: pointer"
+                    class="text-decoration-none text-primary font-weight-600">
+                    + Show all weeks
+                </a>
+            </div>
+            
+        </div>
+
+        
+
+        
+
+        <!-- About Instructor -->
+        
+        <div class="w-100 bg-light py-4">
+            <div class="container-fluid container-md">
+                <p class="h3 font-weight-600 text-dark mb-5">About the Instructors</p>
+                
+                <div class="row justify-content-center mb-4">
+                    <div class="col-sm-12 col-md-1 mr-4 d-flex justify-content-center align-items-start">
+                        <img width=115 style="border-radius: 50%"
+                            src="../assets/img/academics/instructors/9012_2x.jpg">
+                    </div>
+                    <div class="col-sm-12 col-md-9">
+                        <div id="9012"
+                            class="h4 font-weight-600 text-secondary text-center text-md-left">
+                            Harish Guruprasad Ramaswamy</div>
+                        <div class="lead text-dark mt-1">
+                            
+                                Assistant Professor,
+                            
+                            
+                                Department of Computer Sciences & Engineering,
+                            
+                            
+                            IIT Madras
+                            
+                        </div>
+                        <div id="9012-info" class="instructor-paragraph-small">
+                            
+                            
+                            <p class="text-dark d-inline">
+                                I am currently an assistant professor at the computer science and engineering (CSE) department of IIT Madras. My primary areas of interest are in machine learning, statistical learning theory and optimisation. I was previously a research scientist at IBM research labs and a post-doc at University of Michigan. I completed my PhD at the Computer Science and Automation (CSA) department of the Indian Institute of Science (IISc), Bangalore advised by Prof. Shivani Agarwal. I have been fortunate to work with Profs. Ambuj Tewari and Clayton Scott during my PhD and postdoc. Earlier, I finished my M.E. under the supervision of Prof. Chiranjib Bhattacharyya.
+                            </p>
+                            
+                            
+                            <div class="d-none" id="9012-info-l" }} style="cursor: pointer">
+                                &nbsp;
+                                <a onclick="showLess(`9012-info`);"
+                                    class="text-primary text-decoration-none font-weight-600"> less</a>
+                            </div>
+                            
+                            </p>
+
+                            
+                            <div class="mb-3">
+                                
+                                <a href="https://urlprotection-tko.global.sonicwall.com/click?PV=1&MSGID=202005151138470154415&URLID=7&ESV=10.0.6.3447&IV=7EE92FAF46C55F231C3E19F4F89BE4E1&TT=1589542727216&ESN=1SJLUUFcMf0jWwS6KHvDLJ0O0f%2BWqkTcyb0xz%2FTAyNw%3D&KV=1536961729279&ENCODED_URL=https%3A%2F%2Fsites.google.com%2Fsite%2Fharishguruprasad%2Fhome&HK=38DFD72190D8E526728F998FC3A87E666202B7E91B0E6C6AB9BE41508AEDB0B2" target="_blank" class="text-decoration-none text-dark">
+                                    Visit website
+                                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                                </a>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center mb-4">
+                    <div class="col-sm-12 col-md-1 mr-4 d-flex justify-content-center align-items-start">
+                        <img width=115 style="border-radius: 50%"
+                            src="../assets/img/academics/instructors/9013_2x.jpg">
+                    </div>
+                    <div class="col-sm-12 col-md-9">
+                        <div id="9013"
+                            class="h4 font-weight-600 text-secondary text-center text-md-left">
+                            Arun Rajkumar</div>
+                        <div class="lead text-dark mt-1">
+                            
+                                Assistant Professor,
+                            
+                            
+                                Department of Computer Sciences & Engineering,
+                            
+                            
+                            IIT Madras
+                            
+                        </div>
+                        <div id="9013-info" class="instructor-paragraph-small">
+                            
+                            
+                            <p class="text-dark d-inline">
+                                I am currently an Assistant Professor at the Computer Science and Engineering department of IIT Madras. Prior to joining IIT Madras, I was a research scientist at the Xerox Research Center (now Conduent Labs), Bangalore for three years. I earned my Ph.D from the Indian Institute of Science where I worked on 'Ranking from Pairwise Comparisons'. My research interests are in the areas of Machine learning, statistical learning theory with applications to education and healthcare.
+                            </p>
+                            
+                            
+                            <div class="d-none" id="9013-info-l" }} style="cursor: pointer">
+                                &nbsp;
+                                <a onclick="showLess(`9013-info`);"
+                                    class="text-primary text-decoration-none font-weight-600"> less</a>
+                            </div>
+                            
+                            </p>
+
+                            
+                            <div class="mb-3">
+                                
+                                <a href="https://sites.google.com/view/arun-rajkumar" target="_blank" class="text-decoration-none text-dark">
+                                    Visit website
+                                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                                </a>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center mb-4">
+                    <div class="col-sm-12 col-md-1 mr-4 d-flex justify-content-center align-items-start">
+                        <img width=115 style="border-radius: 50%"
+                            src="../assets/img/academics/instructors/9014_2x.jpg">
+                    </div>
+                    <div class="col-sm-12 col-md-9">
+                        <div id="9014"
+                            class="h4 font-weight-600 text-secondary text-center text-md-left">
+                            Prashanth LA</div>
+                        <div class="lead text-dark mt-1">
+                            
+                                Assistant Professor,
+                            
+                            
+                                Department of Computer Sciences & Engineering,
+                            
+                            
+                            IIT Madras
+                            
+                        </div>
+                        <div id="9014-info" class="instructor-paragraph-small">
+                            
+                            
+                            <p class="text-dark d-inline">
+                                Prashanth L.A. is an Assistant Professor in the Department of Computer Science and Engineering at Indian Institute of Technology Madras. Prior to this, he was a postdoctoral researcher at the Institute for Systems Research, University of Maryland - College Park from 2015 to 2017 and at INRIA Lille - Team SequeL from 2012 to 2014. From 2002 to 2009, he was with Texas Instruments (India) Pvt Ltd, Bangalore, India. 
+                            </p>
+                            
+                            
+                            <div id="9014-info-f" class="d-inline" style="cursor: pointer">
+                                ...&nbsp;
+                                <span onclick="showMore(`9014-info`);"
+                                    class="text-primary text-decoration-none font-weight-600"> more</span>
+                            </div>
+                            
+                            </p>
+
+                            
+                            
+                            <p class="text-dark lessAbout d-inline">
+                                He received his Masters and Ph.D degrees in Computer Science and Automation from Indian Institute of Science, in 2008 and 2013, respectively.  He was awarded the third prize for his Ph.D. dissertation, by the IEEE Intelligent Transportation Systems Society (ITSS). He is the coauthor of a book entitled `Stochastic Recursive Algorithms for Optimization: Simultaneous Perturbation Methods', published by Springer in 2013. His research interests are in reinforcement learning, simulation optimization and multi-armed bandits, with applications in transportation systems, wireless networks and recommendation systems.
+                            </p>
+                            
+                            
+                            <div class="d-none" id="9014-info-l" }} style="cursor: pointer">
+                                &nbsp;
+                                <a onclick="showLess(`9014-info`);"
+                                    class="text-primary text-decoration-none font-weight-600"> less</a>
+                            </div>
+                            
+                            </p>
+
+                            
+                            <div class="mb-3">
+                                
+                                <a href="https://urlprotection-tko.global.sonicwall.com/click?PV=1&MSGID=202005181411190379968&URLID=2&ESV=10.0.6.3447&IV=ABE49EBEBE5CE2CADC71BFE468F8845D&TT=1589811079354&ESN=3dcQk7tPrDNwL1gM7i4MbUsg9qqXux7feYgvZtY6u%2B8%3D&KV=1536961729279&ENCODED_URL=http%3A%2F%2Fcse.iitm.ac.in%2F~prashla%2F&HK=EA34AA8C09C7A4615054057E6FDBF2D269A9F4F1706650F2271C5F8BE948AF74" target="_blank" class="text-decoration-none text-dark">
+                                    Visit website
+                                    <i class="fa fa-external-link" aria-hidden="true"></i>
+                                </a>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!-- View All -->
+        <div class="container-fluid container-md h-auto">
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- 
+                    
+                    
+                     -->
+                    <a class="text-decoration-none" href="../academics.html#AD6">
+                        <p class="lead text-primary font-weight-600 float-md-right float-sm-none">
+                            View all courses
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </p>
+                    </a>
+                    <!-- <a class="text-decoration-none" href="../academics.html#AC12">
+                    </a>
+                    <a class="text-decoration-none" href="../academics.html#AC15">
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    <!-- EndContent -->
+    
+    </div>
+
+    
+    <!-- Footer -->
+    <footer id="footer" class="bg-primary py-3 pt-5">
+        <div class="container-fluid container-sm">
+            <div class="h5 text-lighter">Contact Us</div>
+            <div class="row pt-2 pb-2">
+                <div class="col-sm-12 col-md-5 text-lighter">
+                    <div class="d-flex footer-text">
+                        <div style="flex-basis: 8%"><img style="width: 1rem"
+                                src="../assets/img/homepage/Footer%20icon-location.svg"></div>
+                        <div style="flex-basis: 90%">
+                            Office of IITM Online Programs, <br>3rd Floor, ICSR Building,<br /> IIT Madras, Chennai - 600036
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-2 pb-2">
+                <div class="col-sm-12 col-md-5 text-lighter">
+                    <div class="d-flex footer-text">
+                        <div style="flex-basis: 8%"><img style="width: 1rem"
+                                src="../assets/img/homepage/Footer%20icon-phone.svg"></div>
+                        <div style="flex-basis: 90%">
+                            Phone support will not be available between 13 to 21 January. Please email support-diploma@study.iitm.ac.in for queries 
+                            <!-- 7850999966 (Mon-Fri 9am-6pm)<br /> support-diploma@study.iitm.ac.in -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-2 pb-4 border-bottom justify-content-between">
+                <div class="col-sm-12 col-md-5 text-lighter">
+                    <!-- <div class="d-flex footer-text mt-3">
+                            <div class="qr-image mr-3" style="height: 100px;width:100px;">
+                                <img src="assets/img/homepage/whatsappQR.jpeg" style="height: auto;width:100%;" alt="">
+                            </div>
+                            <div class="qr-text" style="flex-basis: 40%;margin-right: auto;align-self: center;">
+                                Scan QR code to chat with our WhatsApp bot +91 9840776800
+                            </div>
+                        </div> -->
+                </div>
+                <div class="d-none d-md-block col-md-6 text-lighter align-self-end">
+                    <div class="d-flex justify-content-end">
+                        <small>© IIT Madras. All rights reserved.</small>
+                    </div>
+                </div>
+                <div class="d-md-none footer-hidden col-md-12 pt-4">
+                    <a class="text-decoration-none" href="https://www.facebook.com/iitmdiploma" target="_blank">
+                        <img class="mr-1" src="../assets/img/homepage/Footer%20icon-facebook.svg" alt="fb"
+                            style="width: 2rem">
+                    </a>
+                    <a class="text-decoration-none" href="https://www.instagram.com/iitmdiploma"
+                        target="_blank">
+                        <img class="mr-1" src="../assets/img/homepage/Footer%20icon-instagram.svg" alt="ig"
+                            style="width: 2rem">
+                    </a>
+                    <a class="text-decoration-none" href="https://twitter.com/iitmdiploma" target="_blank">
+                        <img class="mr-1" src="../assets/img/homepage/Footer%20icon-twitter.svg" alt="tw"
+                            style="width: 2rem">
+                    </a>
+                    <a class="text-decoration-none"
+                        href="https://www.linkedin.com/company/iitm-diploma-programs" target="_blank">
+                        <img class="mr-1" src="../assets/img/homepage/Footer%20icon-linkedin.svg" alt="tw"
+                            style="width: 2rem">
+                    </a>
+
+                    <!--<a class="text-decoration-none" href="https://wa.me/message/IVROM2UN7XIJL1" target="_blank">
+                        <img class="mr-1" src="assets/img/homepage/Footer icon-whatsapp.svg" alt="tw"
+                            style="width: 2rem">
+                    </a>-->
+                </div>
+            </div>
+            <div class="py-1 py-md-3 row justify-content-between">
+                <div class="d-none d-md-block col-md-6 pt-2">
+                    <a class="text-decoration-none" href="https://www.facebook.com/iitmdiploma" target="_blank">
+                        <img class="mr-1" src="../assets/img/homepage/Footer%20icon-facebook.svg" alt="fb"
+                            style="width: 2rem">
+                    </a>
+                    <a class="text-decoration-none" href="https://www.instagram.com/iitmdiploma"
+                        target="_blank">
+                        <img class="mr-1" src="../assets/img/homepage/Footer%20icon-instagram.svg" alt="ig"
+                            style="width: 2rem">
+                    </a>
+                    <a class="text-decoration-none" href="https://twitter.com/iitmdiploma" target="_blank">
+                        <img class="mr-1" src="../assets/img/homepage/Footer%20icon-twitter.svg" alt="tw"
+                            style="width: 2rem">
+                    </a>
+                    <a class="text-decoration-none"
+                        href="https://www.linkedin.com/company/iitm-diploma-programs" target="_blank">
+                        <img class="mr-1" src="../assets/img/homepage/Footer%20icon-linkedin.svg" alt="tw"
+                            style="width: 2rem">
+                    </a>
+                    <!--<a class="text-decoration-none" href="https://wa.me/message/IVROM2UN7XIJL1" target="_blank">
+                        <img class="mr-1" src="assets/img/homepage/Footer icon-whatsapp.svg" alt="tw"
+                            style="width: 2rem">
+                    </a>-->
+                </div>
+                <div class="col-sm-12 col-md-6 d-md-none footer-hidden footer-text-small text-lighter">
+                    <div class="d-flex justify-content-md-end">
+                        <small>© IIT Madras. All rights reserved.</small>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 d-flex justify-content-md-end">
+                    <div class="text-lighter">
+                        <span class="footerLinks footer-text" url="../privacy_policy.html" style="cursor: pointer;">Privacy
+                            Policy</span> |
+                        <span class="footerLinks footer-text" url="../tos.html" style="cursor: pointer;">Terms of
+                            Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="../assets/js/plugins/bootstrap-switch.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <script src="../assets/js/plugins/moment.min.js"></script>
+    <script src="../assets/js/plugins/datetimepicker.js" type="text/javascript"></script>
+    <script src="../assets/js/plugins/bootstrap-datepicker.min.js"></script>
+
+    <!-- Control Center for Argon UI Kit: parallax effects, scripts for the example pages etc -->
+    <script src="../assets/js/argon-design-system.min.js?v=1.2.0" type="text/javascript"></script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="../assets/js/custom/google-language-translator.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-209773326-1" defer></script>
+    <script src="../assets/js/custom/fetch-google-tags.js"></script>
+
+    <!-- Custom -->
+    <script src="../assets/js/custom/courses.js"></script>
+    
+  </body>
+</html>

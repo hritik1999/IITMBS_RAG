@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 412 690" style="enable-background:new 0 0 412 690;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#6B717C;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill:#FFFFFF;}
+	.st3{font-family:'OpenSans';}
+	.st4{font-size:26px;}
+	.st5{font-size:16px;}
+	.st6{opacity:0.8;fill:#FFFFFF;enable-background:new    ;}
+</style>
+<path class="st0" d="M12,0h388c6.4,0,11.5,5.1,11.5,11.5v667c0,6.4-5.1,11.5-11.5,11.5H12c-6.4,0-11.5-5.1-11.5-11.5v-667
+	C0.5,5.1,5.6,0,12,0z"/>
+<polyline class="st1" points="411.5,138.8 206,181.3 0.5,138.8 "/>
+<polyline class="st1" points="411.5,285.3 206,327.8 0.5,285.3 "/>
+<polyline class="st1" points="411.5,487.9 206,530.4 0.5,487.9 "/>
+<text transform="matrix(1 0 0 1 83.0693 67.8069)" class="st2 st3 st4">Application Timeline</text>
+<text transform="matrix(1 0 0 1 184.7689 97.8069)" class="st2 st3 st5">OPEN</text>
+<text transform="matrix(1 0 0 1 131.2095 122.8002)" class="st2 st3 st5">Closes: 31 Mar 2023</text>
+<text transform="matrix(1 0 0 1 136.1118 270.0835)" class="st2 st3 st5">Exam: 30 Apr 2023</text>
+<text transform="matrix(1 0 0 1 118.0801 240.0835)" class="st2 st3 st4">Qualifier Exam</text>
+<text transform="matrix(1 0 0 1 130.1196 442.0835)" class="st2 st3 st5">Opens: 16 May 2023</text>
+<text transform="matrix(1 0 0 1 63.0547 410.0835)" class="st6 st3 st5">Only for those who clear Qualifier Exam.</text>
+<text transform="matrix(1 0 0 1 130.4437 469.0835)" class="st2 st3 st5">Closes: 17 May 2023</text>
+<text transform="matrix(1 0 0 1 87.0366 384.0835)" class="st2 st3 st4">Course Registration</text>
+<text transform="matrix(1 0 0 1 119.9358 640.0835)" class="st2 st3 st5">Term Starts: 2 Jun 2023</text>
+<text transform="matrix(1 0 0 1 106.582 610.0835)" class="st6 st3 st5">Only for those who Register.</text>
+<text transform="matrix(1 0 0 1 41.4478 586.0835)" class="st2 st3 st4">Commencement of Classes</text>
+</svg>

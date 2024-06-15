@@ -1,0 +1,160 @@
+.notificationText {
+    font-size: 0.9rem
+}
+
+
+#footer {
+    background-color: #B71006 !important;
+}
+
+.scrollToTop {
+    display: none;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 99;
+    color: white;
+    cursor: pointer;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    padding: 15px;
+    outline: none;
+    border: none;
+}
+
+.xl\+notification {
+    display: block;
+}
+
+.xl-notification {
+    display: none;
+}
+
+.videoContainer {
+    position: absolute;
+    height: 126%;
+    top: -13%;
+    left: 0;
+    width: 100%
+}
+
+.landingVideoCourse {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+.landingVideoCourse iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.expand {
+    min-width: 1rem;
+}
+
+.center-xs {
+    align-items: start;
+}
+
+.keyFeatureImage {
+    padding-bottom: 0.5rem;
+}
+
+.directorImage {
+    display: flex;
+    justify-content: start;
+}
+
+.directorText {
+    text-align: start;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+}
+
+.text-small {
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .landingVideoOverlay {
+        height: 25vh;
+    }
+    .videoContainer {
+        position: absolute;
+        height: 120%;
+        top: -10%;
+        left: 0;
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 573px) {
+    p,a,b,span,button,td, div {
+        font-size: 1.25rem;
+    }
+    .text-small {
+        font-size: 1rem;
+    }
+    .notificationText {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .xl\+notification {
+        display: none;
+    }
+    .xl-notification {
+        display: block;
+    }
+    .briefDetails {
+        padding: 1rem 2rem;
+    }
+    .videoContainer {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        width: 100%;
+    }
+    .remindMe {
+        display: flex;
+        justify-content: center;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .landingImage {
+        padding-bottom: 3rem;
+    }
+    .directorText {
+        text-align: center;
+    }
+    .center-xs {
+        align-items: center;
+    }
+    .keyFeatureImage {
+        padding-bottom: 1rem;
+    }
+    .directorImage {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+    .footer-text {
+        font-size: 1rem;
+    }
+    .footer-text-small {
+        font-size: 0.9rem;
+    }
+    .remindText {
+        text-align: center;
+        width: 100%;
+    }
+    .footer-hidden {
+        display: block;
+    }
+}

@@ -1,0 +1,3 @@
+User-Agent: *
+
+Sitemap: https://study.iitm.ac.in/sitemap.xml
