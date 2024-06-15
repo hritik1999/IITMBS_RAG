@@ -1,5 +1,5 @@
 from flask_restful import Resource,Api, reqparse
-from application.ai import query
+from application.ai import query,QA
 
 api = Api(prefix='/api')
 
@@ -9,7 +9,8 @@ class Query(Resource):
         parser = reqparse.RequestParser()
         parser.add_argument('question')
         args = parser.parse_args()
-        return query(args['question'])
+        result = QA(args['question'])
+        return result
     
 api.add_resource(Query, '/query')
 
