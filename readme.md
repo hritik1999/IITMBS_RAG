@@ -29,7 +29,7 @@ To run the application locally, follow these steps:
 ## Usage
 - Navigate to the provided URL in your web browser after starting the Docker container.
 - Enter your queries related to the IITM BS programme in the search box.
-- The application will respond with a RAG status (Red, Amber, Green) based on the relevance and current status of the query.
+- Enjoy!
 
 ## Dependencies
 - Docker: Ensure you have Docker installed on your machine to build and run the containerized application.
