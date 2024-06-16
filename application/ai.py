@@ -44,19 +44,19 @@ def QA(question):
     api_key=HUGGINGFACEHUB_API_TOKEN, model_name="sentence-transformers/all-MiniLM-l6-v2"
 )
 
-    vectordb = Chroma(persist_directory='documents/chroma/', embedding_function=embeddings)
+    vectordb = Chroma(persist_directory='vectordb/chroma/', embedding_function=embeddings)
     retriever = vectordb.as_retriever()
 
-    docs = retriever.get_relevant_documents(question)
-    if not docs:
-        return {"error": "No documents found for the query."}
-    else:
-        print(f"Retrieved {len(docs)} documents")
+    # docs = retriever.get_relevant_documents(question)
+    # if not docs:
+    #     return {"error": "No documents found for the query."}
+    # else:
+    #     print(f"Retrieved {len(docs)} documents")
 
     qa_chain = RetrievalQA.from_chain_type(
         llm,
-        retriever=vectordb.as_retriever(),
-        chain_type='refine'
+        retriever=vectordb.as_retriever(search_type="mmr",search_kwargs={"k":3, "fetch_k":5}),
+   #     chain_type='refine'
     )
     result = qa_chain({"query": question})
 

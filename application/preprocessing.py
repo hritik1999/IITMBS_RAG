@@ -126,13 +126,11 @@ load_dotenv(dotenv_path)
 HUGGINGFACEHUB_API_TOKEN = os.getenv("HF_TOKEN")
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = HUGGINGFACEHUB_API_TOKEN
 
+# embeddings = HuggingFaceEmbeddings()
 
-# embeddings = HuggingFaceInferenceAPIEmbeddings(
-#     api_key=HUGGINGFACEHUB_API_TOKEN, model_name="sentence-transformers/all-MiniLM-l6-v2"
-# )
-
-from langchain_huggingface.embeddings import HuggingFaceEmbeddings
-embeddings = HuggingFaceEmbeddings()
+embeddings = HuggingFaceInferenceAPIEmbeddings(
+    api_key=HUGGINGFACEHUB_API_TOKEN, model_name="sentence-transformers/all-MiniLM-l6-v2"
+)
 
 documents = []
 for item in pages_and_texts_with_chunks:
@@ -148,7 +146,7 @@ for item in pages_and_texts_with_chunks:
 vectordb = Chroma.from_documents(
     documents=documents,
     embedding=embeddings,
-    persist_directory='documents/chroma/'
+    persist_directory='vectordb/chroma/'
 )
 vectordb.persist()
 
@@ -158,9 +156,11 @@ llm = HuggingFaceEndpoint(
         temperature=0.5,
         huggingfacehub_api_token=HUGGINGFACEHUB_API_TOKEN,
     )
-embeddings = HuggingFaceEmbeddings()
 
-vectordb = Chroma(persist_directory='documents/chroma/', embedding_function=embeddings)
+
+
+
+vectordb = Chroma(persist_directory='vectordb/chroma/', embedding_function=embeddings)
 question = 'what is IITM BS programme?'
 qa_chain = RetrievalQA.from_chain_type(
         llm,
