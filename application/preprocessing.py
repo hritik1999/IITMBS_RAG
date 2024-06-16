@@ -9,6 +9,8 @@ from langchain_community.embeddings import HuggingFaceInferenceAPIEmbeddings
 from langchain.schema import Document
 from langchain.chains import RetrievalQA
 from langchain_huggingface import HuggingFaceEndpoint
+from langchain_openai import OpenAIEmbeddings
+from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 import os
 
@@ -125,12 +127,14 @@ dotenv_path = '../.env'
 load_dotenv(dotenv_path)
 HUGGINGFACEHUB_API_TOKEN = os.getenv("HF_TOKEN")
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = HUGGINGFACEHUB_API_TOKEN
+API_KEY = os.getenv("API_TOKEN")
 
 # embeddings = HuggingFaceEmbeddings()
 
 embeddings = HuggingFaceInferenceAPIEmbeddings(
     api_key=HUGGINGFACEHUB_API_TOKEN, model_name="sentence-transformers/all-MiniLM-l6-v2"
 )
+# embeddings = OpenAIEmbeddings(openai_api_base="https://litellm-d2k7gd2v6q-el.a.run.app",openai_api_key=API_KEY)
 
 documents = []
 for item in pages_and_texts_with_chunks:
@@ -150,15 +154,21 @@ vectordb = Chroma.from_documents(
 )
 vectordb.persist()
 
-llm = HuggingFaceEndpoint(
-        repo_id=repo_id,
-        max_length=60,
-        temperature=0.5,
-        huggingfacehub_api_token=HUGGINGFACEHUB_API_TOKEN,
-    )
+# llm = HuggingFaceEndpoint(
+#         repo_id=repo_id,
+#         max_length=60,
+#         temperature=0.5,
+#         huggingfacehub_api_token=HUGGINGFACEHUB_API_TOKEN,
+#     )
 
 
-
+llm = ChatOpenAI(
+    model="Meta-Llama-3-8B-Instruct",
+    temperature=0,
+    max_tokens=100,
+    api_key=API_KEY,
+    base_url="https://litellm-d2k7gd2v6q-el.a.run.app",
+)
 
 vectordb = Chroma(persist_directory='vectordb/chroma/', embedding_function=embeddings)
 question = 'what subjects are there for degree level?'
@@ -170,3 +180,4 @@ qa_chain = RetrievalQA.from_chain_type(
 result = qa_chain({"query": question})
 
 print(result)
+print(vectordb._collection.count())
