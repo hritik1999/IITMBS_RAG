@@ -50,7 +50,7 @@ def QA(question):
 )
 
     vectordb = Chroma(persist_directory='application/vectordb/chroma', embedding_function=embeddings)
-    retriever=vectordb.as_retriever(search_type="mmr",search_kwargs={"k":3, "fetch_k":6})
+    retriever=vectordb.as_retriever(search_type="mmr",search_kwargs={"k":3})
 
     _filter = LLMChainFilter.from_llm(llm)
     compression_retriever = ContextualCompressionRetriever(
