@@ -55,12 +55,12 @@ def QA(question):
 
     qa_chain = RetrievalQA.from_chain_type(
         llm,
-        retriever=vectordb.as_retriever(search_type="mmr",search_kwargs={"k":3, "fetch_k":5}),
+        retriever=vectordb.as_retriever(),
    #     chain_type='refine'
     )
     result = qa_chain({"query": question})
 
-    return result
+    return result['result']
 
 
 
