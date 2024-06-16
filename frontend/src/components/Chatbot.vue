@@ -12,6 +12,7 @@ export default {
   },
   methods: {
     async query() {
+      this.answer = '';
       this.loading = true;
   const res = await fetch('http://127.0.0.1:5001/api/query', {
     method: 'POST',
@@ -25,6 +26,7 @@ export default {
   const data = await res.json();
   this.loading = false;
   this.answer = data;
+  console.log(this.answer)
 }
 
   }
@@ -52,7 +54,11 @@ export default {
     </div>
     <br>
     <div class="container" v-if="answer">
-      <p><b>Answer:</b> {{ answer }}</p>
+      <p><b>Answer:</b> {{ answer['answer'] }}</p>
+      <p><b>Citation:</b> </p>
+      <ul>
+       <li v-for="cite in answer['citations']" :key="cite">{{ cite }}</li>
+      </ul>
     </div>
     <div class="text-center" v-if="loading"> 
         <img src="../assets/ZKZg.gif" height="50" width="50">
