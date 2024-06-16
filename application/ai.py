@@ -56,12 +56,9 @@ def QA(question):
     | StrOutputParser()
 )   
     retrieve_docs = (lambda x: x["input"]) | retriever
-    try:
-        chain = RunnablePassthrough.assign(context=retrieve_docs).assign(
-        answer=rag_chain_from_docs
+    chain = RunnablePassthrough.assign(context=retrieve_docs).assign(
+    answer=rag_chain_from_docs
     )
-    except:
-        return "Sorry something went wrong! please try with another prompt."
     result = chain.invoke({"input":question})
     return result
 
