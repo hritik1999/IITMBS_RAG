@@ -12,6 +12,9 @@ from langchain_core.documents import Document
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 import os
+from langchain.retrievers.document_compressors import LLMChainFilter
+from langchain.retrievers import ContextualCompressionRetriever
+from langchain.retrievers.document_compressors import LLMChainExtractor
 
 
 dotenv_path = '../.env'
@@ -47,7 +50,12 @@ def QA(question):
 )
 
     vectordb = Chroma(persist_directory='application/vectordb/chroma', embedding_function=embeddings)
-    retriever = vectordb.as_retriever(search_kwargs={"k": 3})
+    retriever=vectordb.as_retriever(search_type="mmr",search_kwargs={"k":3, "fetch_k":6})
+
+    _filter = LLMChainFilter.from_llm(llm)
+    compression_retriever = ContextualCompressionRetriever(
+    base_compressor=_filter, base_retriever=retriever
+)
 
     rag_chain_from_docs = (
     RunnablePassthrough.assign(context=(lambda x: format_docs(x["context"])))
