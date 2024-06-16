@@ -47,7 +47,7 @@ def QA(question):
 )
 
     vectordb = Chroma(persist_directory='application/vectordb/chroma', embedding_function=embeddings)
-    retriever = vectordb.as_retriever()
+    retriever = vectordb.as_retriever(search_kwargs={"k": 3})
 
     rag_chain_from_docs = (
     RunnablePassthrough.assign(context=(lambda x: format_docs(x["context"])))
