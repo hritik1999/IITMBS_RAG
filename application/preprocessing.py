@@ -161,7 +161,7 @@ llm = HuggingFaceEndpoint(
 
 
 vectordb = Chroma(persist_directory='vectordb/chroma/', embedding_function=embeddings)
-question = 'what is IITM BS programme?'
+question = 'what subjects are there for degree level?'
 qa_chain = RetrievalQA.from_chain_type(
         llm,
         retriever=vectordb.as_retriever(search_type="mmr",search_kwargs={"k":3, "fetch_k":5}),

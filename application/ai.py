@@ -44,7 +44,7 @@ def QA(question):
     api_key=HUGGINGFACEHUB_API_TOKEN, model_name="sentence-transformers/all-MiniLM-l6-v2"
 )
 
-    vectordb = Chroma(persist_directory='vectordb/chroma/', embedding_function=embeddings)
+    vectordb = Chroma(persist_directory='application/vectordb/chroma/', embedding_function=embeddings)
     retriever = vectordb.as_retriever()
 
     # docs = retriever.get_relevant_documents(question)
