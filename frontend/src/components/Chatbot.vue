@@ -24,9 +24,16 @@ export default {
       question: this.question
     })
   });
-  const data = await res.json();
-  this.loading = false;
-  this.answer = data;
+
+  if (res.status ==200) {
+    const data = await res.json();
+    this.loading = false;
+    this.answer = data;
+  } else {
+    this.answer = "Sorry, I can't answer that. Try asking something else.";
+    this.loading = false;
+  }
+
 },
 toggleExpanded(index) {
   this.expanded.splice(index, 1, !this.expanded[index]);
