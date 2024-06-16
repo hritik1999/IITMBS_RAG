@@ -40,12 +40,12 @@ toggleExpanded(index) {
 
 <template>
     <div class="text-center text-white bg-dark" style="padding: 10px 10px 10px 10px;">
-      <h1 class="">Q&A with IITM Bs Degree Progamme!</h1>
+      <h1 class="">Q&A with IITM Bs Degree Programme!</h1>
     </div>
     <br><br>
     <div class="info">
       <p class="text-center">This application is made for BS Degree students to ask questions about the IITM BS Degree Programme. 
-        You can ask it about anything you want to know about the programme. For example when is quiz 1 / oppe1 for java?, What is the grading pattern for PDSA? , How many subjects to clear Diploma in Programming? What is Paradox? etc.  </p>
+        You can ask it about anything you want to know about the programme. For example what is OPPE?,How many course in diploma?, How many subjects to clear Diploma in Programming? What is Paradox? etc.  </p>
     </div>
     <br>
     <div class="form text-center">
