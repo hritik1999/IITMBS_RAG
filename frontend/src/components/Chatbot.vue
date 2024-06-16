@@ -8,6 +8,7 @@ export default {
       question: '',
       answer: '',
       loading: false,
+      expanded:[]
     };
   },
   methods: {
@@ -26,10 +27,12 @@ export default {
   const data = await res.json();
   this.loading = false;
   this.answer = data;
-  console.log(this.answer)
+},
+toggleExpanded(index) {
+  this.expanded.splice(index, 1, !this.expanded[index]);
 }
+  },
 
-  }
 }
 
 
@@ -57,8 +60,18 @@ export default {
       <p><b>Answer:</b> {{ answer['answer'] }}</p>
       <p><b>Citation:</b> </p>
       <ul>
-       <li v-for="cite in answer['citations']" :key="cite">{{ cite }}</li>
-      </ul>
+    <li v-for="(cite, index) in answer.citations" :key="index">
+      <div v-if="!expanded[index]">
+        {{ cite.slice(0, 100) + '...' }}
+        <button  @click="toggleExpanded(index)" id="citation">Show more</button>
+      </div>
+      <div v-if="expanded[index]">
+        {{ cite }}
+        <button  @click="toggleExpanded(index)" id="citation">Show less</button>
+      </div>
+      
+    </li>
+  </ul>
     </div>
     <div class="text-center" v-if="loading"> 
         <img src="../assets/ZKZg.gif" height="50" width="50">
@@ -78,6 +91,16 @@ export default {
   }
   .answer {
     font-size:large;
+  }
+
+  #citation {
+    font-size: small;
+    margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
   }
   
   </style>
