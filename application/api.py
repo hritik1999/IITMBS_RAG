@@ -3,6 +3,7 @@ from application.ai import QA
 import json
 from flask import jsonify
 
+
 api = Api(prefix='/api')
 
 

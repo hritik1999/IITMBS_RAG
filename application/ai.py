@@ -12,8 +12,7 @@ from langchain_core.documents import Document
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 import os
-import json
-from flask import jsonify
+
 
 dotenv_path = '../.env'
 load_dotenv(dotenv_path)
@@ -26,7 +25,6 @@ def format_docs(docs: List[Document]):
     return "\n\n".join(doc.page_content for doc in docs)
 
 def QA(question):
-
 
     llm = ChatOpenAI(
     model="Meta-Llama-3-8B-Instruct",
@@ -43,8 +41,7 @@ def QA(question):
         ("human", "{input}"),
     ]
 )
-    
-    
+
     embeddings = HuggingFaceInferenceAPIEmbeddings(
     api_key=HUGGINGFACEHUB_API_TOKEN, model_name="sentence-transformers/all-MiniLM-l6-v2"
 )
